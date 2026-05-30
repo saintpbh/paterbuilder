@@ -1772,18 +1772,20 @@ body {
 
 /* --- AI Coach Sidebar & FAB --- */
 .ai-coach-trigger {
-    position: fixed;
-    top: calc(10px + env(safe-area-inset-top));
-    left: 50%;
-    transform: translateX(-50%);
+    position: fixed !important;
+    top: calc(10px + env(safe-area-inset-top)) !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    bottom: auto !important;
+    right: auto !important;
     width: 56px;
     height: 56px;
     border-radius: 16px; /* M3 Standard FAB */
-    background: var(--md-sys-color-primary-container);
-    border: none;
-    color: var(--md-sys-color-on-primary-container);
+    background: var(--md-sys-color-primary-container) !important;
+    border: none !important;
+    color: var(--md-sys-color-on-primary-container) !important;
     cursor: pointer;
-    box-shadow: var(--md-elevation-3);
+    box-shadow: var(--md-elevation-3) !important;
     display: flex;
     align-items: center;
     justify-content: center;
