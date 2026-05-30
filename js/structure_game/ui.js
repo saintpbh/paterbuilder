@@ -211,6 +211,9 @@ export function renderAnswerSlot(chunks, selectedIndices, onUndo) {
 }
 
 export function showContext(context, onHide) {
+    // 사용자의 요청에 의해 💡 WHEN TO USE 팁 박스(Context Bubble)를 화면에서 완전히 숨깁니다.
+    return;
+    
     const bubble = document.getElementById('context-bubble');
     if (context && bubble) {
         const ctxEl = document.getElementById('context-text');

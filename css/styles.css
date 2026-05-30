@@ -262,20 +262,9 @@ body {
     box-shadow: 0 0 8px rgba(0, 191, 165, 0.4);
 }
 
-/* Context Bubble */
+/* Context Bubble - 숨김 처리 */
 .context-bubble {
-    background: linear-gradient(135deg, #FFF9C4 0%, #FFF59D 100%);
-    border-left: 4px solid #FDD835;
-    border-radius: 12px;
-    padding: 12px 16px;
-    margin-bottom: 1.5rem;
-    display: flex;
-    gap: 12px;
-    align-items: flex-start;
-    box-shadow: 0 2px 8px rgba(253, 216, 53, 0.2);
-    opacity: 0;
-    transform: translateY(-10px);
-    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    display: none !important;
 }
 
 .context-bubble.active {
