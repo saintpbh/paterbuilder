@@ -2448,7 +2448,18 @@ body {
     }
     
     .ai-coach-trigger {
-        width: 48px;
-        height: 48px;
+        display: none !important;
     }
+}
+
+/* --- CRITICAL FORCE SHIELD: Caching Defense & Floating Button Extermination --- */
+.save-exit-btn,
+.save-exit-btn.icon-only,
+.practice-mode-btn.icon-only,
+.ai-coach-trigger,
+#ai-coach-trigger {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
 }

@@ -1,4 +1,4 @@
-const CACHE_NAME = 'pattern-builder-v1.3';
+const CACHE_NAME = 'pattern-builder-v2.1';
 const ASSETS = [
   './',
   './index.html',
