@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    
+    <!-- PWA Installation Settings -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#6200EA">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Pattern Builder">
+    <link rel="apple-touch-icon" href="https://raw.githubusercontent.com/saintpbh/Rainbow-Grammer/main/data/icon.png">
+    
+    <title>Rainbow Pattern Builder</title>
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+    <link rel="stylesheet" href="css/styles.css?v=1.3">
+</head>
+
+<body data-version="1.3">
+
+    <div id="game-container">
+        <!-- Welcome Modal -->
+        <div id="welcome-modal">
+            <!-- Content Injected via JS -->
+        </div>
+
+        <!-- Transition Modal -->
+        <div id="transition-modal">
+            <div class="transition-content">
+                <h2 id="next-level-title">Next Level</h2>
+                <p id="next-level-description">Grammar explanation goes here</p>
+                <button class="ready-btn" onclick="proceedToNextLevel()">Yes, Ready! 🚀</button>
+            </div>
+        </div>
+
+
+        <!-- Grammar Tips Modal -->
+        <div class="grammar-modal" id="grammar-modal">
+            <div class="grammar-modal-content">
+                <h2 id="grammar-title">Grammar Pattern</h2>
+                <div class="grammar-explanation" id="grammar-explanation"></div>
+                <div class="grammar-examples">
+                    <h3>Examples:</h3>
+                    <ul id="grammar-examples-list"></ul>
+                </div>
+                <button class="ready-btn" onclick="closeGrammarModal()">Got it! Let's practice 🚀</button>
+            </div>
+        </div>
+
+        <!-- Progress Tracking HUD -->
+        <div class="progress-hud">
+            <!-- Chili Level Indicator -->
+            <div class="chili-display" onclick="testSpicyLevel()" title="Test Spicy Level 1">
+                <span id="chili-icon">🌶️</span>
+                <span id="chili-count">x 0</span>
+            </div>
+
+            <div class="day-info">
+                <div class="day-info-left">
+                    <span id="day-number">Day 1 of 28</span>
+                    <span id="week-badge">Week 1</span>
+                </div>
+                <!-- Practice Day / Level badge moves to right end -->
+                <div class="day-info-right">
+                    <span id="level-btn" class="level-badge level-badge-hud">LEVEL 1-1</span>
+                </div>
+            </div>
+            <div class="sentence-progress">
+                <div class="sentence-progress-header">
+                    <span id="sentence-counter">Sentence 1 of 10</span>
+                    <!-- Move audio speed controls inside the HUD bar for better containment -->
+                    <div class="audio-controls-embedded">
+                        <button id="tts-toggle-btn" class="tts-toggle-btn" onclick="toggleTTS()" title="TTS On/Off">🔇 Voice Off</button>
+                        <select id="voice-select" class="voice-select" onchange="changeVoice(this.value)" title="Choose English Voice">
+                            <option value="" style="color: black;">Loading Voices...</option>
+                        </select>
+                        <button class="speed-btn" onclick="changeSpeed(0.75)">0.75×</button>
+                        <button class="speed-btn active" onclick="changeSpeed(1.0)">1.0×</button>
+                        <button class="speed-btn" onclick="changeSpeed(1.25)">1.25×</button>
+                        <button class="speed-btn" onclick="changeSpeed(1.5)">1.5×</button>
+                    </div>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progress-fill" style="width: 0%"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hidden Score Elements to prevent JS Errors -->
+        <span id="score-today" style="display: none;"></span>
+        <span id="score-total" style="display: none;"></span>
+
+        <div id="success-overlay">
+            <div class="success-badge">PERFECT! +20</div>
+        </div>
+
+
+        <!-- Context Bubble -->
+        <div class="context-bubble" id="context-bubble">
+            <div class="context-icon">💡</div>
+            <div class="context-content">
+                <div class="context-title">When to use</div>
+                <div class="context-text" id="context-text"></div>
+            </div>
+            <div class="context-close" onclick="hideContext()">×</div>
+        </div>
+
+        <div class="english-question" id="question-display"></div>
+        <div class="korean-text" id="question-text">
+            Loading...
+        </div>
+
+
+        <!-- Error Feedback -->
+        <div class="error-feedback" id="error-feedback">
+            <div class="feedback-icon">❌</div>
+            <div class="feedback-message" id="feedback-message">Not quite right...</div>
+            <div class="feedback-hint" id="feedback-hint"></div>
+            <button class="try-again-btn" onclick="resetAfterError()">Try Again</button>
+        </div>
+
+        <div class="answer-area" id="answer-slot">
+            <!-- Selected chunks appear here -->
+            <div style="color: #CFD8DC; font-weight: 600;">Tap chunks to build the sentence</div>
+        </div>
+
+        <div class="chunk-pool" id="pool-area">
+            <!-- Scrambled chunks appear here -->
+        </div>
+
+        <div id="float-score-container"></div>
+
+        <div class="keyboard-hints" id="keyboard-hints">
+            Tab: Navigate | Enter: Select | Backspace: Undo | Ctrl+Enter: Submit | R: Replay Audio
+        </div>
+
+        <!-- Save & Exit Button (Power Icon) -->
+        <button class="save-exit-btn icon-only" onclick="showExitModal()" title="학습 마치기">⏻</button>
+
+    </div>
+
+    <!-- Practice Mode Modal -->
+    <div class="practice-modal" id="practice-modal">
+        <div class="practice-modal-content">
+            <h2>📚 Practice Mode</h2>
+            <p style="color: #666; margin-bottom: 1.5rem;">
+                Choose a day to review. You can practice any completed day without affecting your progress.
+            </p>
+            <div class="day-selector" id="day-selector"></div>
+            <div class="practice-buttons">
+                <button class="exit-cancel-btn" onclick="closePracticeMode()">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Exit Confirmation Modal -->
+    <div class="exit-modal" id="exit-modal">
+        <div class="exit-modal-content">
+            <h2>✨ 좋은 학습이었어요!</h2>
+            <p>
+                <strong>현재 진행 상황이 저장됩니다.</strong><br>
+                다음에 접속하시면 바로 이어서 학습할 수 있습니다.
+            </p>
+            <div id="exit-info" style="background: #F5F5F5; padding: 1rem; border-radius: 12px; margin-bottom: 1.5rem;">
+                <div style="font-size: 0.9rem; color: #666;">현재 위치</div>
+                <div id="exit-progress" style="font-weight: 700; color: var(--primary); margin-top: 0.5rem;"></div>
+            </div>
+            <div class="exit-modal-buttons">
+                <button class="exit-cancel-btn" onclick="closeExitModal()">계속 학습</button>
+                <button class="exit-confirm-btn" onclick="confirmExit()">저장하고 나가기</button>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+
+</html>

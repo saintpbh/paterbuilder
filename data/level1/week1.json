@@ -1,0 +1,1963 @@
+{
+  "curriculum": [
+    {
+      "id": "2-1-1",
+      "section": "Day 1",
+      "description": "Core Lesson",
+      "question": "What do I do?",
+      "korean": "나는 빨간 사과를 원한다.",
+      "english": "I want a red apple.",
+      "chunks": [
+        {
+          "text": "I",
+          "role": "Subject",
+          "color": "#FF0000"
+        },
+        {
+          "text": "want",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "a red apple",
+          "role": "Object",
+          "color": "#FFD700"
+        }
+      ],
+      "context": "Core Lesson",
+      "grammarGuide": {
+        "title": "Core Lesson",
+        "structure": [
+          {
+            "text": "Subject",
+            "color": "#FF0000"
+          },
+          {
+            "text": "Verb",
+            "color": "#FF7F00"
+          },
+          {
+            "text": "Object",
+            "color": "#FFD700"
+          }
+        ]
+      }
+    },
+    {
+      "id": "2-1-2",
+      "section": "Day 1",
+      "description": "Core Lesson",
+      "question": "What does He do?",
+      "korean": "그는 파란 차를 가지고 있다.",
+      "english": "He has a blue car.",
+      "chunks": [
+        {
+          "text": "He",
+          "role": "Subject",
+          "color": "#FF0000"
+        },
+        {
+          "text": "has",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "a blue car",
+          "role": "Object",
+          "color": "#FFD700"
+        }
+      ],
+      "context": "Core Lesson",
+      "grammarGuide": null
+    },
+    {
+      "id": "2-1-3",
+      "section": "Day 1",
+      "description": "Core Lesson",
+      "question": "What does She do?",
+      "korean": "그녀는 노란 꽃을 좋아한다.",
+      "english": "She likes yellow flowers.",
+      "chunks": [
+        {
+          "text": "She",
+          "role": "Subject",
+          "color": "#FF0000"
+        },
+        {
+          "text": "likes",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "yellow flowers",
+          "role": "Object",
+          "color": "#FFD700"
+        }
+      ],
+      "context": "Core Lesson",
+      "grammarGuide": null
+    },
+    {
+      "id": "2-1-4",
+      "section": "Day 1",
+      "description": "Core Lesson",
+      "question": "What is happening?",
+      "korean": "푸른 잔디가 자란다.",
+      "english": "The green grass grows.",
+      "chunks": [
+        {
+          "text": "The green grass",
+          "role": "Subject",
+          "color": "#FF0000"
+        },
+        {
+          "text": "grows",
+          "role": "Verb",
+          "color": "#FF7F00"
+        }
+      ],
+      "context": "Core Lesson",
+      "grammarGuide": null
+    },
+    {
+      "id": "2-1-5",
+      "section": "Day 1",
+      "description": "Core Lesson",
+      "question": "What do I do?",
+      "korean": "나는 검은 고양이를 보았다.",
+      "english": "I saw a black cat.",
+      "chunks": [
+        {
+          "text": "I",
+          "role": "Subject",
+          "color": "#FF0000"
+        },
+        {
+          "text": "saw",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "a black cat",
+          "role": "Object",
+          "color": "#FFD700"
+        }
+      ],
+      "context": "Core Lesson",
+      "grammarGuide": null
+    },
+    {
+      "id": "2-1-6",
+      "section": "Day 1",
+      "description": "Core Lesson",
+      "question": "How does it feel?",
+      "korean": "하얀 눈은 차갑다.",
+      "english": "The white snow is cold.",
+      "chunks": [
+        {
+          "text": "The white snow",
+          "role": "Subject",
+          "color": "#FF0000"
+        },
+        {
+          "text": "is",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "cold",
+          "role": "Complement",
+          "color": "#BA68C8"
+        }
+      ],
+      "context": "Core Lesson",
+      "grammarGuide": null
+    },
+    {
+      "id": "2-1-7",
+      "section": "Day 1",
+      "description": "Core Lesson",
+      "question": "What should you do?",
+      "korean": "너는 분홍색 신발을 좋아하니?",
+      "english": "Do you like pink shoes?",
+      "chunks": [
+        {
+          "text": "Do you like",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "pink shoes",
+          "role": "Object",
+          "color": "#FFD700"
+        }
+      ],
+      "context": "Core Lesson",
+      "grammarGuide": null
+    },
+    {
+      "id": "2-1-8",
+      "section": "Day 1",
+      "description": "Core Lesson",
+      "question": "What is happening?",
+      "korean": "보라색 드레스는 예쁘다.",
+      "english": "The purple dress is pretty.",
+      "chunks": [
+        {
+          "text": "The purple dress",
+          "role": "Subject",
+          "color": "#FF0000"
+        },
+        {
+          "text": "is",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "pretty",
+          "role": "Complement",
+          "color": "#BA68C8"
+        }
+      ],
+      "context": "Core Lesson",
+      "grammarGuide": null
+    },
+    {
+      "id": "2-1-9",
+      "section": "Day 1",
+      "description": "Core Lesson",
+      "question": "Where does this happen?",
+      "korean": "갈색 곰들은 겨울에 잔다.",
+      "english": "Brown bears sleep in winter.",
+      "chunks": [
+        {
+          "text": "Brown bears",
+          "role": "Subject",
+          "color": "#FF0000"
+        },
+        {
+          "text": "sleep",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "in winter",
+          "role": "Adverb",
+          "color": "#BA68C8"
+        }
+      ],
+      "context": "Core Lesson",
+      "grammarGuide": null
+    },
+    {
+      "id": "2-1-10",
+      "section": "Day 1",
+      "description": "Core Lesson",
+      "question": "What is happening?",
+      "korean": "주황색 노을은 아름답다.",
+      "english": "The orange sunset is beautiful.",
+      "chunks": [
+        {
+          "text": "The orange sunset",
+          "role": "Subject",
+          "color": "#FF0000"
+        },
+        {
+          "text": "is",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "beautiful",
+          "role": "Complement",
+          "color": "#BA68C8"
+        }
+      ],
+      "context": "Core Lesson",
+      "grammarGuide": null
+    },
+    {
+      "id": "2-2-1",
+      "section": "Day 2",
+      "description": "Core Lesson",
+      "question": "What does It look like?",
+      "korean": "그 높은 나무는 하늘에 닿는다.",
+      "english": "The tall tree touches the sky.",
+      "chunks": [
+        {
+          "text": "The tall tree",
+          "role": "Subject",
+          "color": "#FF0000"
+        },
+        {
+          "text": "touches",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "the sky",
+          "role": "Object",
+          "color": "#FFD700"
+        }
+      ],
+      "context": "Core Lesson",
+      "grammarGuide": {
+        "title": "Core Lesson",
+        "structure": [
+          {
+            "text": "Subject",
+            "color": "#FF0000"
+          },
+          {
+            "text": "Verb",
+            "color": "#FF7F00"
+          },
+          {
+            "text": "Object",
+            "color": "#FFD700"
+          }
+        ]
+      }
+    },
+    {
+      "id": "2-2-2",
+      "section": "Day 2",
+      "description": "Core Lesson",
+      "question": "What does It look like?",
+      "korean": "작은 쥐가 빠르게 달린다.",
+      "english": "A small mouse runs fast.",
+      "chunks": [
+        {
+          "text": "A small mouse",
+          "role": "Subject",
+          "color": "#FF0000"
+        },
+        {
+          "text": "runs",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "fast",
+          "role": "Adverb",
+          "color": "#BA68C8"
+        }
+      ],
+      "context": "Core Lesson",
+      "grammarGuide": null
+    },
+    {
+      "id": "2-2-3",
+      "section": "Day 2",
+      "description": "Core Lesson",
+      "question": "What does It look like?",
+      "korean": "큰 코끼리는 나뭇잎을 먹는다.",
+      "english": "The big elephant eats leaves.",
+      "chunks": [
+        {
+          "text": "The big elephant",
+          "role": "Subject",
+          "color": "#FF0000"
+        },
+        {
+          "text": "eats",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "leaves",
+          "role": "Object",
+          "color": "#FFD700"
+        }
+      ],
+      "context": "Core Lesson",
+      "grammarGuide": null
+    },
+    {
+      "id": "2-2-4",
+      "section": "Day 2",
+      "description": "Core Lesson",
+      "question": "What does It look like?",
+      "korean": "그녀는 긴 머리를 가지고 있다.",
+      "english": "She has long hair.",
+      "chunks": [
+        {
+          "text": "She",
+          "role": "Subject",
+          "color": "#FF0000"
+        },
+        {
+          "text": "has",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "long hair",
+          "role": "Object",
+          "color": "#FFD700"
+        }
+      ],
+      "context": "Core Lesson",
+      "grammarGuide": null
+    },
+    {
+      "id": "2-2-5",
+      "section": "Day 2",
+      "description": "Core Lesson",
+      "question": "What does It look like?",
+      "korean": "키 작은 남자가 높이 뛴다.",
+      "english": "The short man jumps high.",
+      "chunks": [
+        {
+          "text": "The short man",
+          "role": "Subject",
+          "color": "#FF0000"
+        },
+        {
+          "text": "jumps",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "high",
+          "role": "Adverb",
+          "color": "#BA68C8"
+        }
+      ],
+      "context": "Core Lesson",
+      "grammarGuide": null
+    },
+    {
+      "id": "2-2-6",
+      "section": "Day 2",
+      "description": "Core Lesson",
+      "question": "What does It look like?",
+      "korean": "넓은 강이 여기 흐른다.",
+      "english": "A wide river flows here.",
+      "chunks": [
+        {
+          "text": "A wide river",
+          "role": "Subject",
+          "color": "#FF0000"
+        },
+        {
+          "text": "flows",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "here",
+          "role": "Adverb",
+          "color": "#BA68C8"
+        }
+      ],
+      "context": "Core Lesson",
+      "grammarGuide": null
+    },
+    {
+      "id": "2-2-7",
+      "section": "Day 2",
+      "description": "Core Lesson",
+      "question": "What does It look like?",
+      "korean": "좁은 길은 위험하다.",
+      "english": "The narrow road is dangerous.",
+      "chunks": [
+        {
+          "text": "The narrow road",
+          "role": "Subject",
+          "color": "#FF0000"
+        },
+        {
+          "text": "is",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "dangerous",
+          "role": "Complement",
+          "color": "#BA68C8"
+        }
+      ],
+      "context": "Core Lesson",
+      "grammarGuide": null
+    },
+    {
+      "id": "2-2-8",
+      "section": "Day 2",
+      "description": "Core Lesson",
+      "question": "What does It look like?",
+      "korean": "그는 두꺼운 책을 읽는다.",
+      "english": "He reads a thick book.",
+      "chunks": [
+        {
+          "text": "He",
+          "role": "Subject",
+          "color": "#FF0000"
+        },
+        {
+          "text": "reads",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "a thick book",
+          "role": "Object",
+          "color": "#FFD700"
+        }
+      ],
+      "context": "Core Lesson",
+      "grammarGuide": null
+    },
+    {
+      "id": "2-2-9",
+      "section": "Day 2",
+      "description": "Core Lesson",
+      "question": "What does It look like?",
+      "korean": "얇은 종이는 쉽게 찢어진다.",
+      "english": "The thin paper tears easily.",
+      "chunks": [
+        {
+          "text": "The thin paper",
+          "role": "Subject",
+          "color": "#FF0000"
+        },
+        {
+          "text": "tears",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "easily",
+          "role": "Adverb",
+          "color": "#BA68C8"
+        }
+      ],
+      "context": "Core Lesson",
+      "grammarGuide": null
+    },
+    {
+      "id": "2-2-10",
+      "section": "Day 2",
+      "description": "Core Lesson",
+      "question": "What does It look like?",
+      "korean": "거대한 파도가 해안을 때린다.",
+      "english": "Huge waves hit the shore.",
+      "chunks": [
+        {
+          "text": "Huge waves",
+          "role": "Subject",
+          "color": "#FF0000"
+        },
+        {
+          "text": "hit",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "the shore",
+          "role": "Object",
+          "color": "#FFD700"
+        }
+      ],
+      "context": "Core Lesson",
+      "grammarGuide": null
+    },
+    {
+      "id": "2-3-1",
+      "section": "Day 3",
+      "description": "Core Lesson",
+      "question": "How does someone feel?",
+      "korean": "행복한 소년이 미소 짓는다.",
+      "english": "The happy boy smiles.",
+      "chunks": [
+        {
+          "text": "The happy boy",
+          "role": "Subject",
+          "color": "#FF0000"
+        },
+        {
+          "text": "smiles",
+          "role": "Verb",
+          "color": "#FF7F00"
+        }
+      ],
+      "context": "Core Lesson",
+      "grammarGuide": {
+        "title": "Core Lesson",
+        "structure": [
+          {
+            "text": "Subject",
+            "color": "#FF0000"
+          },
+          {
+            "text": "Verb",
+            "color": "#FF7F00"
+          }
+        ]
+      }
+    },
+    {
+      "id": "2-3-2",
+      "section": "Day 3",
+      "description": "Core Lesson",
+      "question": "How does someone feel?",
+      "korean": "슬픈 노래가 나온다.",
+      "english": "A sad song plays.",
+      "chunks": [
+        {
+          "text": "A sad song",
+          "role": "Subject",
+          "color": "#FF0000"
+        },
+        {
+          "text": "plays",
+          "role": "Verb",
+          "color": "#FF7F00"
+        }
+      ],
+      "context": "Core Lesson",
+      "grammarGuide": null
+    },
+    {
+      "id": "2-3-3",
+      "section": "Day 3",
+      "description": "Core Lesson",
+      "question": "How does someone feel?",
+      "korean": "화난 새가 공격한다.",
+      "english": "The angry bird attacks.",
+      "chunks": [
+        {
+          "text": "The angry bird",
+          "role": "Subject",
+          "color": "#FF0000"
+        },
+        {
+          "text": "attacks",
+          "role": "Verb",
+          "color": "#FF7F00"
+        }
+      ],
+      "context": "Core Lesson",
+      "grammarGuide": null
+    },
+    {
+      "id": "2-3-4",
+      "section": "Day 3",
+      "description": "Core Lesson",
+      "question": "How does someone feel?",
+      "korean": "나는 오늘 신난다.",
+      "english": "I am excited today.",
+      "chunks": [
+        {
+          "text": "I",
+          "role": "Subject",
+          "color": "#FF0000"
+        },
+        {
+          "text": "am",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "excited",
+          "role": "Complement",
+          "color": "#BA68C8"
+        },
+        {
+          "text": "today",
+          "role": "Adverb",
+          "color": "#BA68C8"
+        }
+      ],
+      "context": "Core Lesson",
+      "grammarGuide": null
+    },
+    {
+      "id": "2-3-5",
+      "section": "Day 3",
+      "description": "Core Lesson",
+      "question": "How does someone feel?",
+      "korean": "그녀는 지금 피곤하다.",
+      "english": "She feels tired now.",
+      "chunks": [
+        {
+          "text": "She",
+          "role": "Subject",
+          "color": "#FF0000"
+        },
+        {
+          "text": "feels",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "tired",
+          "role": "Complement",
+          "color": "#BA68C8"
+        },
+        {
+          "text": "now",
+          "role": "Adverb",
+          "color": "#BA68C8"
+        }
+      ],
+      "context": "Core Lesson",
+      "grammarGuide": null
+    },
+    {
+      "id": "2-3-6",
+      "section": "Day 3",
+      "description": "Core Lesson",
+      "question": "How does someone feel?",
+      "korean": "배고픈 늑대가 사냥한다.",
+      "english": "The hungry wolf hunts.",
+      "chunks": [
+        {
+          "text": "The hungry wolf",
+          "role": "Subject",
+          "color": "#FF0000"
+        },
+        {
+          "text": "hunts",
+          "role": "Verb",
+          "color": "#FF7F00"
+        }
+      ],
+      "context": "Core Lesson",
+      "grammarGuide": null
+    },
+    {
+      "id": "2-3-7",
+      "section": "Day 3",
+      "description": "Core Lesson",
+      "question": "Answer this question.",
+      "korean": "목 마르니?",
+      "english": "Are you thirsty?",
+      "chunks": [
+        {
+          "text": "Are",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "you",
+          "role": "Subject",
+          "color": "#FF0000"
+        },
+        {
+          "text": "thirsty",
+          "role": "Complement",
+          "color": "#BA68C8"
+        }
+      ],
+      "context": "Core Lesson",
+      "grammarGuide": null
+    },
+    {
+      "id": "2-3-8",
+      "section": "Day 3",
+      "description": "Core Lesson",
+      "question": "How does someone feel?",
+      "korean": "용감한 기사가 싸운다.",
+      "english": "A brave knight fights.",
+      "chunks": [
+        {
+          "text": "A brave knight",
+          "role": "Subject",
+          "color": "#FF0000"
+        },
+        {
+          "text": "fights",
+          "role": "Verb",
+          "color": "#FF7F00"
+        }
+      ],
+      "context": "Core Lesson",
+      "grammarGuide": null
+    },
+    {
+      "id": "2-3-9",
+      "section": "Day 3",
+      "description": "Core Lesson",
+      "question": "How does someone feel?",
+      "korean": "겁먹은 아이가 운다.",
+      "english": "The scared child cries.",
+      "chunks": [
+        {
+          "text": "The scared child",
+          "role": "Subject",
+          "color": "#FF0000"
+        },
+        {
+          "text": "cries",
+          "role": "Verb",
+          "color": "#FF7F00"
+        }
+      ],
+      "context": "Core Lesson",
+      "grammarGuide": null
+    },
+    {
+      "id": "2-3-10",
+      "section": "Day 3",
+      "description": "Core Lesson",
+      "question": "How does someone feel?",
+      "korean": "우리는 네가 자랑스럽다.",
+      "english": "We are proud of you.",
+      "chunks": [
+        {
+          "text": "We",
+          "role": "Subject",
+          "color": "#FF0000"
+        },
+        {
+          "text": "are",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "proud",
+          "role": "Complement",
+          "color": "#BA68C8"
+        },
+        {
+          "text": "of you",
+          "role": "Modifier",
+          "color": "#B0BEC5"
+        }
+      ],
+      "context": "Core Lesson",
+      "grammarGuide": null
+    },
+    {
+      "id": "2-4-1",
+      "section": "Day 4",
+      "description": "Core Lesson",
+      "question": "How does it feel?",
+      "korean": "뜨거운 국수가 내 혀를 데게 한다.",
+      "english": "The hot noodle burns my tongue.",
+      "chunks": [
+        {
+          "text": "The hot noodle",
+          "role": "Subject",
+          "color": "#FF0000"
+        },
+        {
+          "text": "burns",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "my tongue",
+          "role": "Object",
+          "color": "#FFD700"
+        }
+      ],
+      "context": "Core Lesson",
+      "grammarGuide": {
+        "title": "Core Lesson",
+        "structure": [
+          {
+            "text": "Subject",
+            "color": "#FF0000"
+          },
+          {
+            "text": "Verb",
+            "color": "#FF7F00"
+          },
+          {
+            "text": "Object",
+            "color": "#FFD700"
+          }
+        ]
+      }
+    },
+    {
+      "id": "2-4-2",
+      "section": "Day 4",
+      "description": "Core Lesson",
+      "question": "How does it feel?",
+      "korean": "차가운 얼음이 천천히 녹는다.",
+      "english": "Cold ice melts slowly.",
+      "chunks": [
+        {
+          "text": "Cold ice",
+          "role": "Subject",
+          "color": "#FF0000"
+        },
+        {
+          "text": "melts",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "slowly",
+          "role": "Adverb",
+          "color": "#BA68C8"
+        }
+      ],
+      "context": "Core Lesson",
+      "grammarGuide": null
+    },
+    {
+      "id": "2-4-3",
+      "section": "Day 4",
+      "description": "Core Lesson",
+      "question": "How does it feel?",
+      "korean": "달콤한 사탕은 맛이 좋다.",
+      "english": "Sweet candy tastes good.",
+      "chunks": [
+        {
+          "text": "Sweet candy",
+          "role": "Subject",
+          "color": "#FF0000"
+        },
+        {
+          "text": "tastes",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "good",
+          "role": "Complement",
+          "color": "#BA68C8"
+        }
+      ],
+      "context": "Core Lesson",
+      "grammarGuide": null
+    },
+    {
+      "id": "2-4-4",
+      "section": "Day 4",
+      "description": "Core Lesson",
+      "question": "How does it feel?",
+      "korean": "매운 음식은 나를 땀나게 한다.",
+      "english": "Spicy food makes me sweat.",
+      "chunks": [
+        {
+          "text": "Spicy food",
+          "role": "Subject",
+          "color": "#FF0000"
+        },
+        {
+          "text": "makes",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "me sweat",
+          "role": "Object",
+          "color": "#FFD700"
+        }
+      ],
+      "context": "Core Lesson",
+      "grammarGuide": null
+    },
+    {
+      "id": "2-4-5",
+      "section": "Day 4",
+      "description": "Core Lesson",
+      "question": "How does it feel?",
+      "korean": "부드러운 베개는 편안하다.",
+      "english": "The soft pillow is comfortable.",
+      "chunks": [
+        {
+          "text": "The soft pillow",
+          "role": "Subject",
+          "color": "#FF0000"
+        },
+        {
+          "text": "is",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "comfortable",
+          "role": "Complement",
+          "color": "#BA68C8"
+        }
+      ],
+      "context": "Core Lesson",
+      "grammarGuide": null
+    },
+    {
+      "id": "2-4-6",
+      "section": "Day 4",
+      "description": "Core Lesson",
+      "question": "How does it feel?",
+      "korean": "단단한 바위들은 무겁다.",
+      "english": "Hard rocks are heavy.",
+      "chunks": [
+        {
+          "text": "Hard rocks",
+          "role": "Subject",
+          "color": "#FF0000"
+        },
+        {
+          "text": "are",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "heavy",
+          "role": "Complement",
+          "color": "#BA68C8"
+        }
+      ],
+      "context": "Core Lesson",
+      "grammarGuide": null
+    },
+    {
+      "id": "2-4-7",
+      "section": "Day 4",
+      "description": "Core Lesson",
+      "question": "How does it feel?",
+      "korean": "시끄러운 음악은 내 귀를 아프게 한다.",
+      "english": "The loud music hurts my ears.",
+      "chunks": [
+        {
+          "text": "The loud music",
+          "role": "Subject",
+          "color": "#FF0000"
+        },
+        {
+          "text": "hurts",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "my ears",
+          "role": "Object",
+          "color": "#FFD700"
+        }
+      ],
+      "context": "Core Lesson",
+      "grammarGuide": null
+    },
+    {
+      "id": "2-4-8",
+      "section": "Day 4",
+      "description": "Core Lesson",
+      "question": "How does it feel?",
+      "korean": "조용한 방은 평화롭다.",
+      "english": "A quiet room is peaceful.",
+      "chunks": [
+        {
+          "text": "A quiet room",
+          "role": "Subject",
+          "color": "#FF0000"
+        },
+        {
+          "text": "is",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "peaceful",
+          "role": "Complement",
+          "color": "#BA68C8"
+        }
+      ],
+      "context": "Core Lesson",
+      "grammarGuide": null
+    },
+    {
+      "id": "2-4-9",
+      "section": "Day 4",
+      "description": "Core Lesson",
+      "question": "How does it feel?",
+      "korean": "거친 사포가 나무를 긁는다.",
+      "english": "Rough sandpaper scratches wood.",
+      "chunks": [
+        {
+          "text": "Rough sandpaper",
+          "role": "Subject",
+          "color": "#FF0000"
+        },
+        {
+          "text": "scratches",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "wood",
+          "role": "Object",
+          "color": "#FFD700"
+        }
+      ],
+      "context": "Core Lesson",
+      "grammarGuide": null
+    },
+    {
+      "id": "2-4-10",
+      "section": "Day 4",
+      "description": "Core Lesson",
+      "question": "How does it feel?",
+      "korean": "매끄러운 비단은 느낌이 좋다.",
+      "english": "The smooth silk feels nice.",
+      "chunks": [
+        {
+          "text": "The smooth silk",
+          "role": "Subject",
+          "color": "#FF0000"
+        },
+        {
+          "text": "feels",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "nice",
+          "role": "Complement",
+          "color": "#BA68C8"
+        }
+      ],
+      "context": "Core Lesson",
+      "grammarGuide": null
+    },
+    {
+      "id": "2-5-1",
+      "section": "Day 5",
+      "description": "Review",
+      "question": "How does someone feel?",
+      "korean": "행복한 소년이 미소 짓는다.",
+      "english": "The happy boy smiles.",
+      "chunks": [
+        {
+          "text": "The happy boy",
+          "role": "Subject",
+          "color": "#FF0000"
+        },
+        {
+          "text": "smiles",
+          "role": "Verb",
+          "color": "#FF7F00"
+        }
+      ],
+      "context": "Review",
+      "grammarGuide": {
+        "title": "Review",
+        "structure": [
+          {
+            "text": "Subject",
+            "color": "#FF0000"
+          },
+          {
+            "text": "Verb",
+            "color": "#FF7F00"
+          }
+        ]
+      }
+    },
+    {
+      "id": "2-5-2",
+      "section": "Day 5",
+      "description": "Review",
+      "question": "What is happening?",
+      "korean": "푸른 잔디가 자란다.",
+      "english": "The green grass grows.",
+      "chunks": [
+        {
+          "text": "The green grass",
+          "role": "Subject",
+          "color": "#FF0000"
+        },
+        {
+          "text": "grows",
+          "role": "Verb",
+          "color": "#FF7F00"
+        }
+      ],
+      "context": "Review",
+      "grammarGuide": null
+    },
+    {
+      "id": "2-5-3",
+      "section": "Day 5",
+      "description": "Review",
+      "question": "How does it feel?",
+      "korean": "매운 음식은 나를 땀나게 한다.",
+      "english": "Spicy food makes me sweat.",
+      "chunks": [
+        {
+          "text": "Spicy food",
+          "role": "Subject",
+          "color": "#FF0000"
+        },
+        {
+          "text": "makes",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "me sweat",
+          "role": "Object",
+          "color": "#FFD700"
+        }
+      ],
+      "context": "Review",
+      "grammarGuide": null
+    },
+    {
+      "id": "2-5-4",
+      "section": "Day 5",
+      "description": "Review",
+      "question": "What does It look like?",
+      "korean": "좁은 길은 위험하다.",
+      "english": "The narrow road is dangerous.",
+      "chunks": [
+        {
+          "text": "The narrow road",
+          "role": "Subject",
+          "color": "#FF0000"
+        },
+        {
+          "text": "is",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "dangerous",
+          "role": "Complement",
+          "color": "#BA68C8"
+        }
+      ],
+      "context": "Review",
+      "grammarGuide": null
+    },
+    {
+      "id": "2-5-5",
+      "section": "Day 5",
+      "description": "Review",
+      "question": "What does It look like?",
+      "korean": "그녀는 긴 머리를 가지고 있다.",
+      "english": "She has long hair.",
+      "chunks": [
+        {
+          "text": "She",
+          "role": "Subject",
+          "color": "#FF0000"
+        },
+        {
+          "text": "has",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "long hair",
+          "role": "Object",
+          "color": "#FFD700"
+        }
+      ],
+      "context": "Review",
+      "grammarGuide": null
+    },
+    {
+      "id": "2-5-6",
+      "section": "Day 5",
+      "description": "Review",
+      "question": "How does someone feel?",
+      "korean": "나는 오늘 신난다.",
+      "english": "I am excited today.",
+      "chunks": [
+        {
+          "text": "I",
+          "role": "Subject",
+          "color": "#FF0000"
+        },
+        {
+          "text": "am",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "excited",
+          "role": "Complement",
+          "color": "#BA68C8"
+        },
+        {
+          "text": "today",
+          "role": "Adverb",
+          "color": "#BA68C8"
+        }
+      ],
+      "context": "Review",
+      "grammarGuide": null
+    },
+    {
+      "id": "2-5-7",
+      "section": "Day 5",
+      "description": "Review",
+      "question": "How does someone feel?",
+      "korean": "우리는 네가 자랑스럽다.",
+      "english": "We are proud of you.",
+      "chunks": [
+        {
+          "text": "We",
+          "role": "Subject",
+          "color": "#FF0000"
+        },
+        {
+          "text": "are",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "proud",
+          "role": "Complement",
+          "color": "#BA68C8"
+        },
+        {
+          "text": "of you",
+          "role": "Modifier",
+          "color": "#B0BEC5"
+        }
+      ],
+      "context": "Review",
+      "grammarGuide": null
+    },
+    {
+      "id": "2-5-8",
+      "section": "Day 5",
+      "description": "Review",
+      "question": "How does it feel?",
+      "korean": "거친 사포가 나무를 긁는다.",
+      "english": "Rough sandpaper scratches wood.",
+      "chunks": [
+        {
+          "text": "Rough sandpaper",
+          "role": "Subject",
+          "color": "#FF0000"
+        },
+        {
+          "text": "scratches",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "wood",
+          "role": "Object",
+          "color": "#FFD700"
+        }
+      ],
+      "context": "Review",
+      "grammarGuide": null
+    },
+    {
+      "id": "2-5-9",
+      "section": "Day 5",
+      "description": "Review",
+      "question": "What does It look like?",
+      "korean": "큰 코끼리는 나뭇잎을 먹는다.",
+      "english": "The big elephant eats leaves.",
+      "chunks": [
+        {
+          "text": "The big elephant",
+          "role": "Subject",
+          "color": "#FF0000"
+        },
+        {
+          "text": "eats",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "leaves",
+          "role": "Object",
+          "color": "#FFD700"
+        }
+      ],
+      "context": "Review",
+      "grammarGuide": null
+    },
+    {
+      "id": "2-5-10",
+      "section": "Day 5",
+      "description": "Review",
+      "question": "What does He do?",
+      "korean": "그는 파란 차를 가지고 있다.",
+      "english": "He has a blue car.",
+      "chunks": [
+        {
+          "text": "He",
+          "role": "Subject",
+          "color": "#FF0000"
+        },
+        {
+          "text": "has",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "a blue car",
+          "role": "Object",
+          "color": "#FFD700"
+        }
+      ],
+      "context": "Review",
+      "grammarGuide": null
+    },
+    {
+      "id": "2-6-1",
+      "section": "Day 6",
+      "description": "Review",
+      "question": "What is happening?",
+      "korean": "푸른 잔디가 자란다.",
+      "english": "The green grass grows.",
+      "chunks": [
+        {
+          "text": "The green grass",
+          "role": "Subject",
+          "color": "#FF0000"
+        },
+        {
+          "text": "grows",
+          "role": "Verb",
+          "color": "#FF7F00"
+        }
+      ],
+      "context": "Review",
+      "grammarGuide": {
+        "title": "Review",
+        "structure": [
+          {
+            "text": "Subject",
+            "color": "#FF0000"
+          },
+          {
+            "text": "Verb",
+            "color": "#FF7F00"
+          }
+        ]
+      }
+    },
+    {
+      "id": "2-6-2",
+      "section": "Day 6",
+      "description": "Review",
+      "question": "What does It look like?",
+      "korean": "작은 쥐가 빠르게 달린다.",
+      "english": "A small mouse runs fast.",
+      "chunks": [
+        {
+          "text": "A small mouse",
+          "role": "Subject",
+          "color": "#FF0000"
+        },
+        {
+          "text": "runs",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "fast",
+          "role": "Adverb",
+          "color": "#BA68C8"
+        }
+      ],
+      "context": "Review",
+      "grammarGuide": null
+    },
+    {
+      "id": "2-6-3",
+      "section": "Day 6",
+      "description": "Review",
+      "question": "How does someone feel?",
+      "korean": "우리는 네가 자랑스럽다.",
+      "english": "We are proud of you.",
+      "chunks": [
+        {
+          "text": "We",
+          "role": "Subject",
+          "color": "#FF0000"
+        },
+        {
+          "text": "are",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "proud",
+          "role": "Complement",
+          "color": "#BA68C8"
+        },
+        {
+          "text": "of you",
+          "role": "Modifier",
+          "color": "#B0BEC5"
+        }
+      ],
+      "context": "Review",
+      "grammarGuide": null
+    },
+    {
+      "id": "2-6-4",
+      "section": "Day 6",
+      "description": "Review",
+      "question": "How does someone feel?",
+      "korean": "배고픈 늑대가 사냥한다.",
+      "english": "The hungry wolf hunts.",
+      "chunks": [
+        {
+          "text": "The hungry wolf",
+          "role": "Subject",
+          "color": "#FF0000"
+        },
+        {
+          "text": "hunts",
+          "role": "Verb",
+          "color": "#FF7F00"
+        }
+      ],
+      "context": "Review",
+      "grammarGuide": null
+    },
+    {
+      "id": "2-6-5",
+      "section": "Day 6",
+      "description": "Review",
+      "question": "How does it feel?",
+      "korean": "조용한 방은 평화롭다.",
+      "english": "A quiet room is peaceful.",
+      "chunks": [
+        {
+          "text": "A quiet room",
+          "role": "Subject",
+          "color": "#FF0000"
+        },
+        {
+          "text": "is",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "peaceful",
+          "role": "Complement",
+          "color": "#BA68C8"
+        }
+      ],
+      "context": "Review",
+      "grammarGuide": null
+    },
+    {
+      "id": "2-6-6",
+      "section": "Day 6",
+      "description": "Review",
+      "question": "What does It look like?",
+      "korean": "큰 코끼리는 나뭇잎을 먹는다.",
+      "english": "The big elephant eats leaves.",
+      "chunks": [
+        {
+          "text": "The big elephant",
+          "role": "Subject",
+          "color": "#FF0000"
+        },
+        {
+          "text": "eats",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "leaves",
+          "role": "Object",
+          "color": "#FFD700"
+        }
+      ],
+      "context": "Review",
+      "grammarGuide": null
+    },
+    {
+      "id": "2-6-7",
+      "section": "Day 6",
+      "description": "Review",
+      "question": "What does She do?",
+      "korean": "그녀는 노란 꽃을 좋아한다.",
+      "english": "She likes yellow flowers.",
+      "chunks": [
+        {
+          "text": "She",
+          "role": "Subject",
+          "color": "#FF0000"
+        },
+        {
+          "text": "likes",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "yellow flowers",
+          "role": "Object",
+          "color": "#FFD700"
+        }
+      ],
+      "context": "Review",
+      "grammarGuide": null
+    },
+    {
+      "id": "2-6-8",
+      "section": "Day 6",
+      "description": "Review",
+      "question": "What does It look like?",
+      "korean": "넓은 강이 여기 흐른다.",
+      "english": "A wide river flows here.",
+      "chunks": [
+        {
+          "text": "A wide river",
+          "role": "Subject",
+          "color": "#FF0000"
+        },
+        {
+          "text": "flows",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "here",
+          "role": "Adverb",
+          "color": "#BA68C8"
+        }
+      ],
+      "context": "Review",
+      "grammarGuide": null
+    },
+    {
+      "id": "2-6-9",
+      "section": "Day 6",
+      "description": "Review",
+      "question": "How does someone feel?",
+      "korean": "슬픈 노래가 나온다.",
+      "english": "A sad song plays.",
+      "chunks": [
+        {
+          "text": "A sad song",
+          "role": "Subject",
+          "color": "#FF0000"
+        },
+        {
+          "text": "plays",
+          "role": "Verb",
+          "color": "#FF7F00"
+        }
+      ],
+      "context": "Review",
+      "grammarGuide": null
+    },
+    {
+      "id": "2-6-10",
+      "section": "Day 6",
+      "description": "Review",
+      "question": "How does it feel?",
+      "korean": "매운 음식은 나를 땀나게 한다.",
+      "english": "Spicy food makes me sweat.",
+      "chunks": [
+        {
+          "text": "Spicy food",
+          "role": "Subject",
+          "color": "#FF0000"
+        },
+        {
+          "text": "makes",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "me sweat",
+          "role": "Object",
+          "color": "#FFD700"
+        }
+      ],
+      "context": "Review",
+      "grammarGuide": null
+    },
+    {
+      "id": "2-7-1",
+      "section": "Day 7",
+      "description": "Review",
+      "question": "How does someone feel?",
+      "korean": "나는 오늘 신난다.",
+      "english": "I am excited today.",
+      "chunks": [
+        {
+          "text": "I",
+          "role": "Subject",
+          "color": "#FF0000"
+        },
+        {
+          "text": "am",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "excited",
+          "role": "Complement",
+          "color": "#BA68C8"
+        },
+        {
+          "text": "today",
+          "role": "Adverb",
+          "color": "#BA68C8"
+        }
+      ],
+      "context": "Review",
+      "grammarGuide": {
+        "title": "Review",
+        "structure": [
+          {
+            "text": "Subject",
+            "color": "#FF0000"
+          },
+          {
+            "text": "Verb",
+            "color": "#FF7F00"
+          },
+          {
+            "text": "Complement",
+            "color": "#BA68C8"
+          },
+          {
+            "text": "Adverb",
+            "color": "#BA68C8"
+          }
+        ]
+      }
+    },
+    {
+      "id": "2-7-2",
+      "section": "Day 7",
+      "description": "Review",
+      "question": "How does someone feel?",
+      "korean": "우리는 네가 자랑스럽다.",
+      "english": "We are proud of you.",
+      "chunks": [
+        {
+          "text": "We",
+          "role": "Subject",
+          "color": "#FF0000"
+        },
+        {
+          "text": "are",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "proud",
+          "role": "Complement",
+          "color": "#BA68C8"
+        },
+        {
+          "text": "of you",
+          "role": "Modifier",
+          "color": "#B0BEC5"
+        }
+      ],
+      "context": "Review",
+      "grammarGuide": null
+    },
+    {
+      "id": "2-7-3",
+      "section": "Day 7",
+      "description": "Review",
+      "question": "What does It look like?",
+      "korean": "좁은 길은 위험하다.",
+      "english": "The narrow road is dangerous.",
+      "chunks": [
+        {
+          "text": "The narrow road",
+          "role": "Subject",
+          "color": "#FF0000"
+        },
+        {
+          "text": "is",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "dangerous",
+          "role": "Complement",
+          "color": "#BA68C8"
+        }
+      ],
+      "context": "Review",
+      "grammarGuide": null
+    },
+    {
+      "id": "2-7-4",
+      "section": "Day 7",
+      "description": "Review",
+      "question": "What does It look like?",
+      "korean": "큰 코끼리는 나뭇잎을 먹는다.",
+      "english": "The big elephant eats leaves.",
+      "chunks": [
+        {
+          "text": "The big elephant",
+          "role": "Subject",
+          "color": "#FF0000"
+        },
+        {
+          "text": "eats",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "leaves",
+          "role": "Object",
+          "color": "#FFD700"
+        }
+      ],
+      "context": "Review",
+      "grammarGuide": null
+    },
+    {
+      "id": "2-7-5",
+      "section": "Day 7",
+      "description": "Review",
+      "question": "How does someone feel?",
+      "korean": "행복한 소년이 미소 짓는다.",
+      "english": "The happy boy smiles.",
+      "chunks": [
+        {
+          "text": "The happy boy",
+          "role": "Subject",
+          "color": "#FF0000"
+        },
+        {
+          "text": "smiles",
+          "role": "Verb",
+          "color": "#FF7F00"
+        }
+      ],
+      "context": "Review",
+      "grammarGuide": null
+    },
+    {
+      "id": "2-7-6",
+      "section": "Day 7",
+      "description": "Review",
+      "question": "How does someone feel?",
+      "korean": "용감한 기사가 싸운다.",
+      "english": "A brave knight fights.",
+      "chunks": [
+        {
+          "text": "A brave knight",
+          "role": "Subject",
+          "color": "#FF0000"
+        },
+        {
+          "text": "fights",
+          "role": "Verb",
+          "color": "#FF7F00"
+        }
+      ],
+      "context": "Review",
+      "grammarGuide": null
+    },
+    {
+      "id": "2-7-7",
+      "section": "Day 7",
+      "description": "Review",
+      "question": "How does it feel?",
+      "korean": "달콤한 사탕은 맛이 좋다.",
+      "english": "Sweet candy tastes good.",
+      "chunks": [
+        {
+          "text": "Sweet candy",
+          "role": "Subject",
+          "color": "#FF0000"
+        },
+        {
+          "text": "tastes",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "good",
+          "role": "Complement",
+          "color": "#BA68C8"
+        }
+      ],
+      "context": "Review",
+      "grammarGuide": null
+    },
+    {
+      "id": "2-7-8",
+      "section": "Day 7",
+      "description": "Review",
+      "question": "What does It look like?",
+      "korean": "얇은 종이는 쉽게 찢어진다.",
+      "english": "The thin paper tears easily.",
+      "chunks": [
+        {
+          "text": "The thin paper",
+          "role": "Subject",
+          "color": "#FF0000"
+        },
+        {
+          "text": "tears",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "easily",
+          "role": "Adverb",
+          "color": "#BA68C8"
+        }
+      ],
+      "context": "Review",
+      "grammarGuide": null
+    },
+    {
+      "id": "2-7-9",
+      "section": "Day 7",
+      "description": "Review",
+      "question": "What does It look like?",
+      "korean": "작은 쥐가 빠르게 달린다.",
+      "english": "A small mouse runs fast.",
+      "chunks": [
+        {
+          "text": "A small mouse",
+          "role": "Subject",
+          "color": "#FF0000"
+        },
+        {
+          "text": "runs",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "fast",
+          "role": "Adverb",
+          "color": "#BA68C8"
+        }
+      ],
+      "context": "Review",
+      "grammarGuide": null
+    },
+    {
+      "id": "2-7-10",
+      "section": "Day 7",
+      "description": "Review",
+      "question": "How does it feel?",
+      "korean": "시끄러운 음악은 내 귀를 아프게 한다.",
+      "english": "The loud music hurts my ears.",
+      "chunks": [
+        {
+          "text": "The loud music",
+          "role": "Subject",
+          "color": "#FF0000"
+        },
+        {
+          "text": "hurts",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "my ears",
+          "role": "Object",
+          "color": "#FFD700"
+        }
+      ],
+      "context": "Review",
+      "grammarGuide": null
+    }
+  ]
+}

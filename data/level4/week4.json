@@ -1,0 +1,1856 @@
+{
+  "curriculum": [
+    {
+      "id": "5-22-1",
+      "section": "Day 22",
+      "description": "Core Lesson",
+      "question": "What is being emphasized?",
+      "korean": "나는 그렇게 큰 파이를 본 적이 없다.",
+      "english": "Never have I seen such a huge pie.",
+      "chunks": [
+        {
+          "text": "Never",
+          "role": "Adverb",
+          "color": "#BA68C8"
+        },
+        {
+          "text": "have I seen",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "such a huge pie",
+          "role": "Object",
+          "color": "#FFD700"
+        }
+      ],
+      "context": "Core Lesson",
+      "grammarGuide": {
+        "title": "Core Lesson",
+        "structure": [
+          {
+            "text": "Adverb",
+            "color": "#BA68C8"
+          },
+          {
+            "text": "Verb",
+            "color": "#FF7F00"
+          },
+          {
+            "text": "Object",
+            "color": "#FFD700"
+          }
+        ]
+      }
+    },
+    {
+      "id": "5-22-2",
+      "section": "Day 22",
+      "description": "Core Lesson",
+      "question": "What is being emphasized?",
+      "korean": "다시는 그거 안 할 거야.",
+      "english": "Never will I do that again.",
+      "chunks": [
+        {
+          "text": "Never",
+          "role": "Adverb",
+          "color": "#BA68C8"
+        },
+        {
+          "text": "will I do",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "that",
+          "role": "Object",
+          "color": "#FFD700"
+        },
+        {
+          "text": "again",
+          "role": "Adverb",
+          "color": "#BA68C8"
+        }
+      ],
+      "context": "Core Lesson",
+      "grammarGuide": null
+    },
+    {
+      "id": "5-22-3",
+      "section": "Day 22",
+      "description": "Core Lesson",
+      "question": "What is being emphasized?",
+      "korean": "그는 거의 말하지 않는다.",
+      "english": "Rarely does he speak.",
+      "chunks": [
+        {
+          "text": "Rarely",
+          "role": "Adverb",
+          "color": "#BA68C8"
+        },
+        {
+          "text": "does he speak",
+          "role": "Verb",
+          "color": "#FF7F00"
+        }
+      ],
+      "context": "Core Lesson",
+      "grammarGuide": null
+    },
+    {
+      "id": "5-22-4",
+      "section": "Day 22",
+      "description": "Core Lesson",
+      "question": "What is being emphasized?",
+      "korean": "우리는 외식을 거의 안 한다.",
+      "english": "Seldom do we eat out.",
+      "chunks": [
+        {
+          "text": "Seldom",
+          "role": "Adverb",
+          "color": "#BA68C8"
+        },
+        {
+          "text": "do we eat out",
+          "role": "Verb",
+          "color": "#FF7F00"
+        }
+      ],
+      "context": "Core Lesson",
+      "grammarGuide": null
+    },
+    {
+      "id": "5-22-5",
+      "section": "Day 22",
+      "description": "Core Lesson",
+      "question": "What is being emphasized?",
+      "korean": "난 꿈에도 몰랐다.",
+      "english": "Little did I know.",
+      "chunks": [
+        {
+          "text": "Little",
+          "role": "Adverb",
+          "color": "#BA68C8"
+        },
+        {
+          "text": "did I know",
+          "role": "Verb",
+          "color": "#FF7F00"
+        }
+      ],
+      "context": "Core Lesson",
+      "grammarGuide": null
+    },
+    {
+      "id": "5-22-6",
+      "section": "Day 22",
+      "description": "Core Lesson",
+      "question": "What is being emphasized?",
+      "korean": "그는 똑똑할 뿐만 아니라 친절하다.",
+      "english": "Not only is he smart but also kind.",
+      "chunks": [
+        {
+          "text": "Not only",
+          "role": "Modifier",
+          "color": "#B0BEC5"
+        },
+        {
+          "text": "is he smart",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "but also kind",
+          "role": "Complement",
+          "color": "#BA68C8"
+        }
+      ],
+      "context": "Core Lesson",
+      "grammarGuide": null
+    },
+    {
+      "id": "5-22-7",
+      "section": "Day 22",
+      "description": "Core Lesson",
+      "question": "What is being compared?",
+      "korean": "내가 도착하자마자 그가 떠났다.",
+      "english": "No sooner had I arrived than he left.",
+      "chunks": [
+        {
+          "text": "No sooner had I arrived",
+          "role": "Modifier",
+          "color": "#B0BEC5"
+        },
+        {
+          "text": "than he left",
+          "role": "Verb",
+          "color": "#FF7F00"
+        }
+      ],
+      "context": "Core Lesson",
+      "grammarGuide": null
+    },
+    {
+      "id": "5-22-8",
+      "section": "Day 22",
+      "description": "Core Lesson",
+      "question": "What is wished for?",
+      "korean": "어떤 상황에서도 열면 안 된다.",
+      "english": "Under no circumstances should you open it.",
+      "chunks": [
+        {
+          "text": "Under no circumstances",
+          "role": "Modifier",
+          "color": "#B0BEC5"
+        },
+        {
+          "text": "should you open it",
+          "role": "Verb",
+          "color": "#FF7F00"
+        }
+      ],
+      "context": "Core Lesson",
+      "grammarGuide": null
+    },
+    {
+      "id": "5-22-9",
+      "section": "Day 22",
+      "description": "Core Lesson",
+      "question": "What is being emphasized?",
+      "korean": "잠들자마자 전화가 울렸다.",
+      "english": "Hardly had I slept when the phone rang.",
+      "chunks": [
+        {
+          "text": "Hardly had I slept",
+          "role": "Modifier",
+          "color": "#B0BEC5"
+        },
+        {
+          "text": "when the phone rang",
+          "role": "Modifier",
+          "color": "#B0BEC5"
+        }
+      ],
+      "context": "Core Lesson",
+      "grammarGuide": null
+    },
+    {
+      "id": "5-22-10",
+      "section": "Day 22",
+      "description": "Core Lesson",
+      "question": "What is the key expression?",
+      "korean": "그제야 나는 이해했다.",
+      "english": "Only then did I understand.",
+      "chunks": [
+        {
+          "text": "Only then",
+          "role": "Modifier",
+          "color": "#B0BEC5"
+        },
+        {
+          "text": "did I understand",
+          "role": "Verb",
+          "color": "#FF7F00"
+        }
+      ],
+      "context": "Core Lesson",
+      "grammarGuide": null
+    },
+    {
+      "id": "5-23-1",
+      "section": "Day 23",
+      "description": "Core Lesson",
+      "question": "What is being emphasized?",
+      "korean": "버스 온다!",
+      "english": "Here comes the bus!",
+      "chunks": [
+        {
+          "text": "Here",
+          "role": "Adverb",
+          "color": "#BA68C8"
+        },
+        {
+          "text": "comes",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "the bus",
+          "role": "Subject",
+          "color": "#FF0000"
+        }
+      ],
+      "context": "Core Lesson",
+      "grammarGuide": {
+        "title": "Core Lesson",
+        "structure": [
+          {
+            "text": "Adverb",
+            "color": "#BA68C8"
+          },
+          {
+            "text": "Verb",
+            "color": "#FF7F00"
+          },
+          {
+            "text": "Subject",
+            "color": "#FF0000"
+          }
+        ]
+      }
+    },
+    {
+      "id": "5-23-2",
+      "section": "Day 23",
+      "description": "Core Lesson",
+      "question": "What is being emphasized?",
+      "korean": "내 돈 날아가네.",
+      "english": "There goes my money.",
+      "chunks": [
+        {
+          "text": "There",
+          "role": "Adverb",
+          "color": "#BA68C8"
+        },
+        {
+          "text": "goes",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "my money",
+          "role": "Subject",
+          "color": "#FF0000"
+        }
+      ],
+      "context": "Core Lesson",
+      "grammarGuide": null
+    },
+    {
+      "id": "5-23-3",
+      "section": "Day 23",
+      "description": "Core Lesson",
+      "question": "What is being emphasized?",
+      "korean": "해가 뜬다.",
+      "english": "Here comes the sun.",
+      "chunks": [
+        {
+          "text": "Here",
+          "role": "Adverb",
+          "color": "#BA68C8"
+        },
+        {
+          "text": "comes",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "the sun",
+          "role": "Subject",
+          "color": "#FF0000"
+        }
+      ],
+      "context": "Core Lesson",
+      "grammarGuide": null
+    },
+    {
+      "id": "5-23-4",
+      "section": "Day 23",
+      "description": "Core Lesson",
+      "question": "What is described here?",
+      "korean": "여기 거스름돈입니다.",
+      "english": "Here is your change.",
+      "chunks": [
+        {
+          "text": "Here",
+          "role": "Adverb",
+          "color": "#BA68C8"
+        },
+        {
+          "text": "is",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "your change",
+          "role": "Subject",
+          "color": "#FF0000"
+        }
+      ],
+      "context": "Core Lesson",
+      "grammarGuide": null
+    },
+    {
+      "id": "5-23-5",
+      "section": "Day 23",
+      "description": "Core Lesson",
+      "question": "What is the key expression?",
+      "korean": "그가 저기 있네.",
+      "english": "There he is.",
+      "chunks": [
+        {
+          "text": "There",
+          "role": "Adverb",
+          "color": "#BA68C8"
+        },
+        {
+          "text": "he",
+          "role": "Subject",
+          "color": "#FF0000"
+        },
+        {
+          "text": "is",
+          "role": "Verb",
+          "color": "#FF7F00"
+        }
+      ],
+      "context": "Core Lesson",
+      "grammarGuide": null
+    },
+    {
+      "id": "5-23-6",
+      "section": "Day 23",
+      "description": "Core Lesson",
+      "question": "What is the key expression?",
+      "korean": "새가 멀리 날아갔다.",
+      "english": "Away flew the bird.",
+      "chunks": [
+        {
+          "text": "Away",
+          "role": "Adverb",
+          "color": "#BA68C8"
+        },
+        {
+          "text": "flew",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "the bird",
+          "role": "Subject",
+          "color": "#FF0000"
+        }
+      ],
+      "context": "Core Lesson",
+      "grammarGuide": null
+    },
+    {
+      "id": "5-23-7",
+      "section": "Day 23",
+      "description": "Core Lesson",
+      "question": "What is the key expression?",
+      "korean": "선생님이 들어오셨다.",
+      "english": "In came the teacher.",
+      "chunks": [
+        {
+          "text": "In",
+          "role": "Adverb",
+          "color": "#BA68C8"
+        },
+        {
+          "text": "came",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "the teacher",
+          "role": "Subject",
+          "color": "#FF0000"
+        }
+      ],
+      "context": "Core Lesson",
+      "grammarGuide": null
+    },
+    {
+      "id": "5-23-8",
+      "section": "Day 23",
+      "description": "Core Lesson",
+      "question": "What wisdom does this teach?",
+      "korean": "사과가 떨어졌다.",
+      "english": "Down fell the apple.",
+      "chunks": [
+        {
+          "text": "Down",
+          "role": "Adverb",
+          "color": "#BA68C8"
+        },
+        {
+          "text": "fell",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "the apple",
+          "role": "Subject",
+          "color": "#FF0000"
+        }
+      ],
+      "context": "Core Lesson",
+      "grammarGuide": null
+    },
+    {
+      "id": "5-23-9",
+      "section": "Day 23",
+      "description": "Core Lesson",
+      "question": "What is being emphasized?",
+      "korean": "풍선이 올라갔다.",
+      "english": "Up went the balloon.",
+      "chunks": [
+        {
+          "text": "Up",
+          "role": "Adverb",
+          "color": "#BA68C8"
+        },
+        {
+          "text": "went",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "the balloon",
+          "role": "Subject",
+          "color": "#FF0000"
+        }
+      ],
+      "context": "Core Lesson",
+      "grammarGuide": null
+    },
+    {
+      "id": "5-23-10",
+      "section": "Day 23",
+      "description": "Core Lesson",
+      "question": "What is the key expression?",
+      "korean": "자 간다.",
+      "english": "Here we go.",
+      "chunks": [
+        {
+          "text": "Here",
+          "role": "Adverb",
+          "color": "#BA68C8"
+        },
+        {
+          "text": "we",
+          "role": "Subject",
+          "color": "#FF0000"
+        },
+        {
+          "text": "go",
+          "role": "Verb",
+          "color": "#FF7F00"
+        }
+      ],
+      "context": "Core Lesson",
+      "grammarGuide": null
+    },
+    {
+      "id": "5-24-1",
+      "section": "Day 24",
+      "description": "Core Lesson",
+      "question": "What is being emphasized?",
+      "korean": "창문을 깬 건 톰이다.",
+      "english": "It is Tom that broke the window.",
+      "chunks": [
+        {
+          "text": "It is Tom",
+          "role": "Subject",
+          "color": "#FF0000"
+        },
+        {
+          "text": "that broke",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "the window",
+          "role": "Object",
+          "color": "#FFD700"
+        }
+      ],
+      "context": "Core Lesson",
+      "grammarGuide": {
+        "title": "Core Lesson",
+        "structure": [
+          {
+            "text": "Subject",
+            "color": "#FF0000"
+          },
+          {
+            "text": "Verb",
+            "color": "#FF7F00"
+          },
+          {
+            "text": "Object",
+            "color": "#FFD700"
+          }
+        ]
+      }
+    },
+    {
+      "id": "5-24-2",
+      "section": "Day 24",
+      "description": "Core Lesson",
+      "question": "What is being emphasized?",
+      "korean": "우리가 만난 건 어제였다.",
+      "english": "It was yesterday that we met.",
+      "chunks": [
+        {
+          "text": "It was yesterday",
+          "role": "Modifier",
+          "color": "#B0BEC5"
+        },
+        {
+          "text": "that we met",
+          "role": "Verb",
+          "color": "#FF7F00"
+        }
+      ],
+      "context": "Core Lesson",
+      "grammarGuide": null
+    },
+    {
+      "id": "5-24-3",
+      "section": "Day 24",
+      "description": "Core Lesson",
+      "question": "What feeling is expressed?",
+      "korean": "내가 사랑하는 건 너야.",
+      "english": "It is you that I love.",
+      "chunks": [
+        {
+          "text": "It is you",
+          "role": "Object",
+          "color": "#FFD700"
+        },
+        {
+          "text": "that I love",
+          "role": "Verb",
+          "color": "#FF7F00"
+        }
+      ],
+      "context": "Core Lesson",
+      "grammarGuide": null
+    },
+    {
+      "id": "5-24-4",
+      "section": "Day 24",
+      "description": "Core Lesson",
+      "question": "What does this sentence express?",
+      "korean": "그들이 결혼한 곳은 파리였다.",
+      "english": "It was in Paris that they married.",
+      "chunks": [
+        {
+          "text": "It was in Paris",
+          "role": "Modifier",
+          "color": "#B0BEC5"
+        },
+        {
+          "text": "that they married",
+          "role": "Verb",
+          "color": "#FF7F00"
+        }
+      ],
+      "context": "Core Lesson",
+      "grammarGuide": null
+    },
+    {
+      "id": "5-24-5",
+      "section": "Day 24",
+      "description": "Core Lesson",
+      "question": "What is being emphasized?",
+      "korean": "내가 원하는 건 피자야.",
+      "english": "It is pizza that I want.",
+      "chunks": [
+        {
+          "text": "It is pizza",
+          "role": "Object",
+          "color": "#FFD700"
+        },
+        {
+          "text": "that I want",
+          "role": "Verb",
+          "color": "#FF7F00"
+        }
+      ],
+      "context": "Core Lesson",
+      "grammarGuide": null
+    },
+    {
+      "id": "5-24-6",
+      "section": "Day 24",
+      "description": "Core Lesson",
+      "question": "What is described here?",
+      "korean": "날 겁먹게 한 건 그의 목소리였다.",
+      "english": "It was his voice that scared me.",
+      "chunks": [
+        {
+          "text": "It was his voice",
+          "role": "Subject",
+          "color": "#FF0000"
+        },
+        {
+          "text": "that scared",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "me",
+          "role": "Object",
+          "color": "#FFD700"
+        }
+      ],
+      "context": "Core Lesson",
+      "grammarGuide": null
+    },
+    {
+      "id": "5-24-7",
+      "section": "Day 24",
+      "description": "Core Lesson",
+      "question": "What is being emphasized?",
+      "korean": "우리가 행동해야 할 때는 지금이다.",
+      "english": "It is now that we must act.",
+      "chunks": [
+        {
+          "text": "It is now",
+          "role": "Modifier",
+          "color": "#B0BEC5"
+        },
+        {
+          "text": "that we must act",
+          "role": "Verb",
+          "color": "#FF7F00"
+        }
+      ],
+      "context": "Core Lesson",
+      "grammarGuide": null
+    },
+    {
+      "id": "5-24-8",
+      "section": "Day 24",
+      "description": "Core Lesson",
+      "question": "What matters most?",
+      "korean": "내가 필요한 건 휴식이다.",
+      "english": "What I need is rest.",
+      "chunks": [
+        {
+          "text": "What I need",
+          "role": "Subject",
+          "color": "#FF0000"
+        },
+        {
+          "text": "is",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "rest",
+          "role": "Complement",
+          "color": "#BA68C8"
+        }
+      ],
+      "context": "Core Lesson",
+      "grammarGuide": null
+    },
+    {
+      "id": "5-24-9",
+      "section": "Day 24",
+      "description": "Core Lesson",
+      "question": "What matters most?",
+      "korean": "크리스마스에 원하는 건 너뿐.",
+      "english": "All I want for Christmas is you.",
+      "chunks": [
+        {
+          "text": "All I want for Christmas",
+          "role": "Subject",
+          "color": "#FF0000"
+        },
+        {
+          "text": "is",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "you",
+          "role": "Complement",
+          "color": "#00FF00"
+        }
+      ],
+      "context": "Core Lesson",
+      "grammarGuide": null
+    },
+    {
+      "id": "5-24-10",
+      "section": "Day 24",
+      "description": "Core Lesson",
+      "question": "What does this sentence express?",
+      "korean": "내가 온 이유는 이거야.",
+      "english": "The reason I came is this.",
+      "chunks": [
+        {
+          "text": "The reason I came",
+          "role": "Subject",
+          "color": "#FF0000"
+        },
+        {
+          "text": "is",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "this",
+          "role": "Complement",
+          "color": "#BA68C8"
+        }
+      ],
+      "context": "Core Lesson",
+      "grammarGuide": null
+    },
+    {
+      "id": "5-25-1",
+      "section": "Day 25",
+      "description": "Core Lesson",
+      "question": "What is the relationship described?",
+      "korean": "많이 읽을수록 똑똑해진다.",
+      "english": "The more you read the smarter you get.",
+      "chunks": [
+        {
+          "text": "The more you read",
+          "role": "Modifier",
+          "color": "#B0BEC5"
+        },
+        {
+          "text": "the smarter",
+          "role": "Complement",
+          "color": "#BA68C8"
+        },
+        {
+          "text": "you get",
+          "role": "Verb",
+          "color": "#FF7F00"
+        }
+      ],
+      "context": "Core Lesson",
+      "grammarGuide": {
+        "title": "Core Lesson",
+        "structure": [
+          {
+            "text": "Modifier",
+            "color": "#B0BEC5"
+          },
+          {
+            "text": "Complement",
+            "color": "#BA68C8"
+          },
+          {
+            "text": "Verb",
+            "color": "#FF7F00"
+          }
+        ]
+      }
+    },
+    {
+      "id": "5-25-2",
+      "section": "Day 25",
+      "description": "Core Lesson",
+      "question": "What is the relationship described?",
+      "korean": "빠를수록 좋다.",
+      "english": "The sooner the better.",
+      "chunks": [
+        {
+          "text": "The sooner",
+          "role": "Modifier",
+          "color": "#B0BEC5"
+        },
+        {
+          "text": "the better",
+          "role": "Complement",
+          "color": "#BA68C8"
+        }
+      ],
+      "context": "Core Lesson",
+      "grammarGuide": null
+    },
+    {
+      "id": "5-25-3",
+      "section": "Day 25",
+      "description": "Core Lesson",
+      "question": "What is the relationship described?",
+      "korean": "많을수록 즐겁다.",
+      "english": "The more the merrier.",
+      "chunks": [
+        {
+          "text": "The more",
+          "role": "Modifier",
+          "color": "#B0BEC5"
+        },
+        {
+          "text": "the merrier",
+          "role": "Complement",
+          "color": "#BA68C8"
+        }
+      ],
+      "context": "Core Lesson",
+      "grammarGuide": null
+    },
+    {
+      "id": "5-25-4",
+      "section": "Day 25",
+      "description": "Core Lesson",
+      "question": "What is the relationship described?",
+      "korean": "높이 오를수록 크게 떨어진다.",
+      "english": "The higher you climb the harder you fall.",
+      "chunks": [
+        {
+          "text": "The higher you climb",
+          "role": "Modifier",
+          "color": "#B0BEC5"
+        },
+        {
+          "text": "the harder",
+          "role": "Adverb",
+          "color": "#BA68C8"
+        },
+        {
+          "text": "you fall",
+          "role": "Verb",
+          "color": "#FF7F00"
+        }
+      ],
+      "context": "Core Lesson",
+      "grammarGuide": null
+    },
+    {
+      "id": "5-25-5",
+      "section": "Day 25",
+      "description": "Core Lesson",
+      "question": "What is the relationship described?",
+      "korean": "열심히 일할수록 운이 좋아진다.",
+      "english": "The harder you work the luckier you get.",
+      "chunks": [
+        {
+          "text": "The harder you work",
+          "role": "Modifier",
+          "color": "#B0BEC5"
+        },
+        {
+          "text": "the luckier",
+          "role": "Complement",
+          "color": "#BA68C8"
+        },
+        {
+          "text": "you get",
+          "role": "Verb",
+          "color": "#FF7F00"
+        }
+      ],
+      "context": "Core Lesson",
+      "grammarGuide": null
+    },
+    {
+      "id": "5-25-6",
+      "section": "Day 25",
+      "description": "Core Lesson",
+      "question": "What is the relationship described?",
+      "korean": "나이 들수록 아는 게 적어진다.",
+      "english": "The older I get the less I know.",
+      "chunks": [
+        {
+          "text": "The older I get",
+          "role": "Modifier",
+          "color": "#B0BEC5"
+        },
+        {
+          "text": "the less",
+          "role": "Object",
+          "color": "#FFD700"
+        },
+        {
+          "text": "I know",
+          "role": "Verb",
+          "color": "#FF7F00"
+        }
+      ],
+      "context": "Core Lesson",
+      "grammarGuide": null
+    },
+    {
+      "id": "5-25-7",
+      "section": "Day 25",
+      "description": "Core Lesson",
+      "question": "What is the relationship described?",
+      "korean": "빨리 운전할수록 더 위험하다.",
+      "english": "The faster you drive the more dangerous it is.",
+      "chunks": [
+        {
+          "text": "The faster you drive",
+          "role": "Modifier",
+          "color": "#B0BEC5"
+        },
+        {
+          "text": "the more dangerous",
+          "role": "Complement",
+          "color": "#BA68C8"
+        },
+        {
+          "text": "it is",
+          "role": "Verb",
+          "color": "#FF7F00"
+        }
+      ],
+      "context": "Core Lesson",
+      "grammarGuide": null
+    },
+    {
+      "id": "5-25-8",
+      "section": "Day 25",
+      "description": "Core Lesson",
+      "question": "What lesson does this teach?",
+      "korean": "안 하는 것보단 늦는 게 낫다.",
+      "english": "Better late than never.",
+      "chunks": [
+        {
+          "text": "Better late",
+          "role": "Complement",
+          "color": "#BA68C8"
+        },
+        {
+          "text": "than never",
+          "role": "Modifier",
+          "color": "#B0BEC5"
+        }
+      ],
+      "context": "Core Lesson",
+      "grammarGuide": null
+    },
+    {
+      "id": "5-25-9",
+      "section": "Day 25",
+      "description": "Core Lesson",
+      "question": "What is being compared?",
+      "korean": "돈이 많으면 문제도 많다.",
+      "english": "More money more problems.",
+      "chunks": [
+        {
+          "text": "More money",
+          "role": "Modifier",
+          "color": "#B0BEC5"
+        },
+        {
+          "text": "more problems",
+          "role": "Subject",
+          "color": "#FF0000"
+        }
+      ],
+      "context": "Core Lesson",
+      "grammarGuide": null
+    },
+    {
+      "id": "5-25-10",
+      "section": "Day 25",
+      "description": "Core Lesson",
+      "question": "What lesson does this teach?",
+      "korean": "말은 쉽지.",
+      "english": "Easier said than done.",
+      "chunks": [
+        {
+          "text": "Easier said",
+          "role": "Complement",
+          "color": "#BA68C8"
+        },
+        {
+          "text": "than done",
+          "role": "Modifier",
+          "color": "#B0BEC5"
+        }
+      ],
+      "context": "Core Lesson",
+      "grammarGuide": null
+    },
+    {
+      "id": "5-26-1",
+      "section": "Day 26",
+      "description": "Review",
+      "question": "What wisdom does this teach?",
+      "korean": "사과가 떨어졌다.",
+      "english": "Down fell the apple.",
+      "chunks": [
+        {
+          "text": "Down",
+          "role": "Adverb",
+          "color": "#BA68C8"
+        },
+        {
+          "text": "fell",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "the apple",
+          "role": "Subject",
+          "color": "#FF0000"
+        }
+      ],
+      "context": "Review",
+      "grammarGuide": {
+        "title": "Review",
+        "structure": [
+          {
+            "text": "Adverb",
+            "color": "#BA68C8"
+          },
+          {
+            "text": "Verb",
+            "color": "#FF7F00"
+          },
+          {
+            "text": "Subject",
+            "color": "#FF0000"
+          }
+        ]
+      }
+    },
+    {
+      "id": "5-26-2",
+      "section": "Day 26",
+      "description": "Review",
+      "question": "What is being emphasized?",
+      "korean": "우리가 만난 건 어제였다.",
+      "english": "It was yesterday that we met.",
+      "chunks": [
+        {
+          "text": "It was yesterday",
+          "role": "Modifier",
+          "color": "#B0BEC5"
+        },
+        {
+          "text": "that we met",
+          "role": "Verb",
+          "color": "#FF7F00"
+        }
+      ],
+      "context": "Review",
+      "grammarGuide": null
+    },
+    {
+      "id": "5-26-3",
+      "section": "Day 26",
+      "description": "Review",
+      "question": "What is the relationship described?",
+      "korean": "빠를수록 좋다.",
+      "english": "The sooner the better.",
+      "chunks": [
+        {
+          "text": "The sooner",
+          "role": "Modifier",
+          "color": "#B0BEC5"
+        },
+        {
+          "text": "the better",
+          "role": "Complement",
+          "color": "#BA68C8"
+        }
+      ],
+      "context": "Review",
+      "grammarGuide": null
+    },
+    {
+      "id": "5-26-4",
+      "section": "Day 26",
+      "description": "Review",
+      "question": "What is being emphasized?",
+      "korean": "내가 원하는 건 피자야.",
+      "english": "It is pizza that I want.",
+      "chunks": [
+        {
+          "text": "It is pizza",
+          "role": "Object",
+          "color": "#FFD700"
+        },
+        {
+          "text": "that I want",
+          "role": "Verb",
+          "color": "#FF7F00"
+        }
+      ],
+      "context": "Review",
+      "grammarGuide": null
+    },
+    {
+      "id": "5-26-5",
+      "section": "Day 26",
+      "description": "Review",
+      "question": "What is being emphasized?",
+      "korean": "우리가 행동해야 할 때는 지금이다.",
+      "english": "It is now that we must act.",
+      "chunks": [
+        {
+          "text": "It is now",
+          "role": "Modifier",
+          "color": "#B0BEC5"
+        },
+        {
+          "text": "that we must act",
+          "role": "Verb",
+          "color": "#FF7F00"
+        }
+      ],
+      "context": "Review",
+      "grammarGuide": null
+    },
+    {
+      "id": "5-26-6",
+      "section": "Day 26",
+      "description": "Review",
+      "question": "What does this sentence express?",
+      "korean": "그들이 결혼한 곳은 파리였다.",
+      "english": "It was in Paris that they married.",
+      "chunks": [
+        {
+          "text": "It was in Paris",
+          "role": "Modifier",
+          "color": "#B0BEC5"
+        },
+        {
+          "text": "that they married",
+          "role": "Verb",
+          "color": "#FF7F00"
+        }
+      ],
+      "context": "Review",
+      "grammarGuide": null
+    },
+    {
+      "id": "5-26-7",
+      "section": "Day 26",
+      "description": "Review",
+      "question": "What is being emphasized?",
+      "korean": "난 꿈에도 몰랐다.",
+      "english": "Little did I know.",
+      "chunks": [
+        {
+          "text": "Little",
+          "role": "Adverb",
+          "color": "#BA68C8"
+        },
+        {
+          "text": "did I know",
+          "role": "Verb",
+          "color": "#FF7F00"
+        }
+      ],
+      "context": "Review",
+      "grammarGuide": null
+    },
+    {
+      "id": "5-26-8",
+      "section": "Day 26",
+      "description": "Review",
+      "question": "What matters most?",
+      "korean": "크리스마스에 원하는 건 너뿐.",
+      "english": "All I want for Christmas is you.",
+      "chunks": [
+        {
+          "text": "All I want for Christmas",
+          "role": "Subject",
+          "color": "#FF0000"
+        },
+        {
+          "text": "is",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "you",
+          "role": "Complement",
+          "color": "#00FF00"
+        }
+      ],
+      "context": "Review",
+      "grammarGuide": null
+    },
+    {
+      "id": "5-26-9",
+      "section": "Day 26",
+      "description": "Review",
+      "question": "What is wished for?",
+      "korean": "어떤 상황에서도 열면 안 된다.",
+      "english": "Under no circumstances should you open it.",
+      "chunks": [
+        {
+          "text": "Under no circumstances",
+          "role": "Modifier",
+          "color": "#B0BEC5"
+        },
+        {
+          "text": "should you open it",
+          "role": "Verb",
+          "color": "#FF7F00"
+        }
+      ],
+      "context": "Review",
+      "grammarGuide": null
+    },
+    {
+      "id": "5-26-10",
+      "section": "Day 26",
+      "description": "Review",
+      "question": "What is the relationship described?",
+      "korean": "많을수록 즐겁다.",
+      "english": "The more the merrier.",
+      "chunks": [
+        {
+          "text": "The more",
+          "role": "Modifier",
+          "color": "#B0BEC5"
+        },
+        {
+          "text": "the merrier",
+          "role": "Complement",
+          "color": "#BA68C8"
+        }
+      ],
+      "context": "Review",
+      "grammarGuide": null
+    },
+    {
+      "id": "5-27-1",
+      "section": "Day 27",
+      "description": "Review",
+      "question": "What is being emphasized?",
+      "korean": "그는 똑똑할 뿐만 아니라 친절하다.",
+      "english": "Not only is he smart but also kind.",
+      "chunks": [
+        {
+          "text": "Not only",
+          "role": "Modifier",
+          "color": "#B0BEC5"
+        },
+        {
+          "text": "is he smart",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "but also kind",
+          "role": "Complement",
+          "color": "#BA68C8"
+        }
+      ],
+      "context": "Review",
+      "grammarGuide": {
+        "title": "Review",
+        "structure": [
+          {
+            "text": "Modifier",
+            "color": "#B0BEC5"
+          },
+          {
+            "text": "Verb",
+            "color": "#FF7F00"
+          },
+          {
+            "text": "Complement",
+            "color": "#BA68C8"
+          }
+        ]
+      }
+    },
+    {
+      "id": "5-27-2",
+      "section": "Day 27",
+      "description": "Review",
+      "question": "What is being compared?",
+      "korean": "돈이 많으면 문제도 많다.",
+      "english": "More money more problems.",
+      "chunks": [
+        {
+          "text": "More money",
+          "role": "Modifier",
+          "color": "#B0BEC5"
+        },
+        {
+          "text": "more problems",
+          "role": "Subject",
+          "color": "#FF0000"
+        }
+      ],
+      "context": "Review",
+      "grammarGuide": null
+    },
+    {
+      "id": "5-27-3",
+      "section": "Day 27",
+      "description": "Review",
+      "question": "What is wished for?",
+      "korean": "어떤 상황에서도 열면 안 된다.",
+      "english": "Under no circumstances should you open it.",
+      "chunks": [
+        {
+          "text": "Under no circumstances",
+          "role": "Modifier",
+          "color": "#B0BEC5"
+        },
+        {
+          "text": "should you open it",
+          "role": "Verb",
+          "color": "#FF7F00"
+        }
+      ],
+      "context": "Review",
+      "grammarGuide": null
+    },
+    {
+      "id": "5-27-4",
+      "section": "Day 27",
+      "description": "Review",
+      "question": "What is being emphasized?",
+      "korean": "내 돈 날아가네.",
+      "english": "There goes my money.",
+      "chunks": [
+        {
+          "text": "There",
+          "role": "Adverb",
+          "color": "#BA68C8"
+        },
+        {
+          "text": "goes",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "my money",
+          "role": "Subject",
+          "color": "#FF0000"
+        }
+      ],
+      "context": "Review",
+      "grammarGuide": null
+    },
+    {
+      "id": "5-27-5",
+      "section": "Day 27",
+      "description": "Review",
+      "question": "What wisdom does this teach?",
+      "korean": "사과가 떨어졌다.",
+      "english": "Down fell the apple.",
+      "chunks": [
+        {
+          "text": "Down",
+          "role": "Adverb",
+          "color": "#BA68C8"
+        },
+        {
+          "text": "fell",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "the apple",
+          "role": "Subject",
+          "color": "#FF0000"
+        }
+      ],
+      "context": "Review",
+      "grammarGuide": null
+    },
+    {
+      "id": "5-27-6",
+      "section": "Day 27",
+      "description": "Review",
+      "question": "What matters most?",
+      "korean": "크리스마스에 원하는 건 너뿐.",
+      "english": "All I want for Christmas is you.",
+      "chunks": [
+        {
+          "text": "All I want for Christmas",
+          "role": "Subject",
+          "color": "#FF0000"
+        },
+        {
+          "text": "is",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "you",
+          "role": "Complement",
+          "color": "#00FF00"
+        }
+      ],
+      "context": "Review",
+      "grammarGuide": null
+    },
+    {
+      "id": "5-27-7",
+      "section": "Day 27",
+      "description": "Review",
+      "question": "What is being emphasized?",
+      "korean": "우리가 행동해야 할 때는 지금이다.",
+      "english": "It is now that we must act.",
+      "chunks": [
+        {
+          "text": "It is now",
+          "role": "Modifier",
+          "color": "#B0BEC5"
+        },
+        {
+          "text": "that we must act",
+          "role": "Verb",
+          "color": "#FF7F00"
+        }
+      ],
+      "context": "Review",
+      "grammarGuide": null
+    },
+    {
+      "id": "5-27-8",
+      "section": "Day 27",
+      "description": "Review",
+      "question": "What is the key expression?",
+      "korean": "자 간다.",
+      "english": "Here we go.",
+      "chunks": [
+        {
+          "text": "Here",
+          "role": "Adverb",
+          "color": "#BA68C8"
+        },
+        {
+          "text": "we",
+          "role": "Subject",
+          "color": "#FF0000"
+        },
+        {
+          "text": "go",
+          "role": "Verb",
+          "color": "#FF7F00"
+        }
+      ],
+      "context": "Review",
+      "grammarGuide": null
+    },
+    {
+      "id": "5-27-9",
+      "section": "Day 27",
+      "description": "Review",
+      "question": "What is the relationship described?",
+      "korean": "높이 오를수록 크게 떨어진다.",
+      "english": "The higher you climb the harder you fall.",
+      "chunks": [
+        {
+          "text": "The higher you climb",
+          "role": "Modifier",
+          "color": "#B0BEC5"
+        },
+        {
+          "text": "the harder",
+          "role": "Adverb",
+          "color": "#BA68C8"
+        },
+        {
+          "text": "you fall",
+          "role": "Verb",
+          "color": "#FF7F00"
+        }
+      ],
+      "context": "Review",
+      "grammarGuide": null
+    },
+    {
+      "id": "5-27-10",
+      "section": "Day 27",
+      "description": "Review",
+      "question": "What is the relationship described?",
+      "korean": "나이 들수록 아는 게 적어진다.",
+      "english": "The older I get the less I know.",
+      "chunks": [
+        {
+          "text": "The older I get",
+          "role": "Modifier",
+          "color": "#B0BEC5"
+        },
+        {
+          "text": "the less",
+          "role": "Object",
+          "color": "#FFD700"
+        },
+        {
+          "text": "I know",
+          "role": "Verb",
+          "color": "#FF7F00"
+        }
+      ],
+      "context": "Review",
+      "grammarGuide": null
+    },
+    {
+      "id": "5-28-1",
+      "section": "Day 28",
+      "description": "Review",
+      "question": "What is being emphasized?",
+      "korean": "해가 뜬다.",
+      "english": "Here comes the sun.",
+      "chunks": [
+        {
+          "text": "Here",
+          "role": "Adverb",
+          "color": "#BA68C8"
+        },
+        {
+          "text": "comes",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "the sun",
+          "role": "Subject",
+          "color": "#FF0000"
+        }
+      ],
+      "context": "Review",
+      "grammarGuide": {
+        "title": "Review",
+        "structure": [
+          {
+            "text": "Adverb",
+            "color": "#BA68C8"
+          },
+          {
+            "text": "Verb",
+            "color": "#FF7F00"
+          },
+          {
+            "text": "Subject",
+            "color": "#FF0000"
+          }
+        ]
+      }
+    },
+    {
+      "id": "5-28-2",
+      "section": "Day 28",
+      "description": "Review",
+      "question": "What lesson does this teach?",
+      "korean": "말은 쉽지.",
+      "english": "Easier said than done.",
+      "chunks": [
+        {
+          "text": "Easier said",
+          "role": "Complement",
+          "color": "#BA68C8"
+        },
+        {
+          "text": "than done",
+          "role": "Modifier",
+          "color": "#B0BEC5"
+        }
+      ],
+      "context": "Review",
+      "grammarGuide": null
+    },
+    {
+      "id": "5-28-3",
+      "section": "Day 28",
+      "description": "Review",
+      "question": "What is being emphasized?",
+      "korean": "우리가 만난 건 어제였다.",
+      "english": "It was yesterday that we met.",
+      "chunks": [
+        {
+          "text": "It was yesterday",
+          "role": "Modifier",
+          "color": "#B0BEC5"
+        },
+        {
+          "text": "that we met",
+          "role": "Verb",
+          "color": "#FF7F00"
+        }
+      ],
+      "context": "Review",
+      "grammarGuide": null
+    },
+    {
+      "id": "5-28-4",
+      "section": "Day 28",
+      "description": "Review",
+      "question": "What is the key expression?",
+      "korean": "그가 저기 있네.",
+      "english": "There he is.",
+      "chunks": [
+        {
+          "text": "There",
+          "role": "Adverb",
+          "color": "#BA68C8"
+        },
+        {
+          "text": "he",
+          "role": "Subject",
+          "color": "#FF0000"
+        },
+        {
+          "text": "is",
+          "role": "Verb",
+          "color": "#FF7F00"
+        }
+      ],
+      "context": "Review",
+      "grammarGuide": null
+    },
+    {
+      "id": "5-28-5",
+      "section": "Day 28",
+      "description": "Review",
+      "question": "What is being emphasized?",
+      "korean": "내 돈 날아가네.",
+      "english": "There goes my money.",
+      "chunks": [
+        {
+          "text": "There",
+          "role": "Adverb",
+          "color": "#BA68C8"
+        },
+        {
+          "text": "goes",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "my money",
+          "role": "Subject",
+          "color": "#FF0000"
+        }
+      ],
+      "context": "Review",
+      "grammarGuide": null
+    },
+    {
+      "id": "5-28-6",
+      "section": "Day 28",
+      "description": "Review",
+      "question": "What is being emphasized?",
+      "korean": "풍선이 올라갔다.",
+      "english": "Up went the balloon.",
+      "chunks": [
+        {
+          "text": "Up",
+          "role": "Adverb",
+          "color": "#BA68C8"
+        },
+        {
+          "text": "went",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "the balloon",
+          "role": "Subject",
+          "color": "#FF0000"
+        }
+      ],
+      "context": "Review",
+      "grammarGuide": null
+    },
+    {
+      "id": "5-28-7",
+      "section": "Day 28",
+      "description": "Review",
+      "question": "What is the relationship described?",
+      "korean": "많이 읽을수록 똑똑해진다.",
+      "english": "The more you read the smarter you get.",
+      "chunks": [
+        {
+          "text": "The more you read",
+          "role": "Modifier",
+          "color": "#B0BEC5"
+        },
+        {
+          "text": "the smarter",
+          "role": "Complement",
+          "color": "#BA68C8"
+        },
+        {
+          "text": "you get",
+          "role": "Verb",
+          "color": "#FF7F00"
+        }
+      ],
+      "context": "Review",
+      "grammarGuide": null
+    },
+    {
+      "id": "5-28-8",
+      "section": "Day 28",
+      "description": "Review",
+      "question": "What is the key expression?",
+      "korean": "그제야 나는 이해했다.",
+      "english": "Only then did I understand.",
+      "chunks": [
+        {
+          "text": "Only then",
+          "role": "Modifier",
+          "color": "#B0BEC5"
+        },
+        {
+          "text": "did I understand",
+          "role": "Verb",
+          "color": "#FF7F00"
+        }
+      ],
+      "context": "Review",
+      "grammarGuide": null
+    },
+    {
+      "id": "5-28-9",
+      "section": "Day 28",
+      "description": "Review",
+      "question": "What is the relationship described?",
+      "korean": "열심히 일할수록 운이 좋아진다.",
+      "english": "The harder you work the luckier you get.",
+      "chunks": [
+        {
+          "text": "The harder you work",
+          "role": "Modifier",
+          "color": "#B0BEC5"
+        },
+        {
+          "text": "the luckier",
+          "role": "Complement",
+          "color": "#BA68C8"
+        },
+        {
+          "text": "you get",
+          "role": "Verb",
+          "color": "#FF7F00"
+        }
+      ],
+      "context": "Review",
+      "grammarGuide": null
+    },
+    {
+      "id": "5-28-10",
+      "section": "Day 28",
+      "description": "Review",
+      "question": "What is the relationship described?",
+      "korean": "나이 들수록 아는 게 적어진다.",
+      "english": "The older I get the less I know.",
+      "chunks": [
+        {
+          "text": "The older I get",
+          "role": "Modifier",
+          "color": "#B0BEC5"
+        },
+        {
+          "text": "the less",
+          "role": "Object",
+          "color": "#FFD700"
+        },
+        {
+          "text": "I know",
+          "role": "Verb",
+          "color": "#FF7F00"
+        }
+      ],
+      "context": "Review",
+      "grammarGuide": null
+    }
+  ]
+}

@@ -1,0 +1,2036 @@
+{
+  "curriculum": [
+    {
+      "id": "2-22-1",
+      "section": "Day 22",
+      "description": "Core Lesson",
+      "question": "What do I do?",
+      "korean": "나는 빨간 사과를 천천히 먹는다.",
+      "english": "I eat a red apple slowly.",
+      "chunks": [
+        {
+          "text": "I",
+          "role": "Subject",
+          "color": "#FF0000"
+        },
+        {
+          "text": "eat",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "a red apple",
+          "role": "Object",
+          "color": "#FFD700"
+        },
+        {
+          "text": "slowly",
+          "role": "Adverb",
+          "color": "#BA68C8"
+        }
+      ],
+      "context": "Core Lesson",
+      "grammarGuide": {
+        "title": "Core Lesson",
+        "structure": [
+          {
+            "text": "Subject",
+            "color": "#FF0000"
+          },
+          {
+            "text": "Verb",
+            "color": "#FF7F00"
+          },
+          {
+            "text": "Object",
+            "color": "#FFD700"
+          },
+          {
+            "text": "Adverb",
+            "color": "#BA68C8"
+          }
+        ]
+      }
+    },
+    {
+      "id": "2-22-2",
+      "section": "Day 22",
+      "description": "Core Lesson",
+      "question": "How does someone feel?",
+      "korean": "행복한 개가 공원에서 달린다.",
+      "english": "The happy dog runs in the park.",
+      "chunks": [
+        {
+          "text": "The happy dog",
+          "role": "Subject",
+          "color": "#FF0000"
+        },
+        {
+          "text": "runs",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "in the park",
+          "role": "Modifier",
+          "color": "#B0BEC5"
+        }
+      ],
+      "context": "Core Lesson",
+      "grammarGuide": null
+    },
+    {
+      "id": "2-22-3",
+      "section": "Day 22",
+      "description": "Core Lesson",
+      "question": "What does It look like?",
+      "korean": "그녀는 집에서 두꺼운 책을 읽는다.",
+      "english": "She reads a thick book at home.",
+      "chunks": [
+        {
+          "text": "She",
+          "role": "Subject",
+          "color": "#FF0000"
+        },
+        {
+          "text": "reads",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "a thick book",
+          "role": "Object",
+          "color": "#FFD700"
+        },
+        {
+          "text": "at home",
+          "role": "Modifier",
+          "color": "#B0BEC5"
+        }
+      ],
+      "context": "Core Lesson",
+      "grammarGuide": null
+    },
+    {
+      "id": "2-22-4",
+      "section": "Day 22",
+      "description": "Core Lesson",
+      "question": "How does it feel?",
+      "korean": "우리는 시원한 강에서 수영한다.",
+      "english": "We swim in the cool river.",
+      "chunks": [
+        {
+          "text": "We",
+          "role": "Subject",
+          "color": "#FF0000"
+        },
+        {
+          "text": "swim",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "in the cool river",
+          "role": "Modifier",
+          "color": "#B0BEC5"
+        }
+      ],
+      "context": "Core Lesson",
+      "grammarGuide": null
+    },
+    {
+      "id": "2-22-5",
+      "section": "Day 22",
+      "description": "Core Lesson",
+      "question": "What does It look like?",
+      "korean": "작은 새가 달콤하게 노래한다.",
+      "english": "The small bird sings sweetly.",
+      "chunks": [
+        {
+          "text": "The small bird",
+          "role": "Subject",
+          "color": "#FF0000"
+        },
+        {
+          "text": "sings",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "sweetly",
+          "role": "Adverb",
+          "color": "#BA68C8"
+        }
+      ],
+      "context": "Core Lesson",
+      "grammarGuide": null
+    },
+    {
+      "id": "2-22-6",
+      "section": "Day 22",
+      "description": "Core Lesson",
+      "question": "How does it feel?",
+      "korean": "그는 오늘 수학을 열심히 공부한다.",
+      "english": "He studies math hard today.",
+      "chunks": [
+        {
+          "text": "He",
+          "role": "Subject",
+          "color": "#FF0000"
+        },
+        {
+          "text": "studies",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "math",
+          "role": "Object",
+          "color": "#FFD700"
+        },
+        {
+          "text": "hard",
+          "role": "Adverb",
+          "color": "#BA68C8"
+        },
+        {
+          "text": "today",
+          "role": "Adverb",
+          "color": "#BA68C8"
+        }
+      ],
+      "context": "Core Lesson",
+      "grammarGuide": null
+    },
+    {
+      "id": "2-22-7",
+      "section": "Day 22",
+      "description": "Core Lesson",
+      "question": "What does It look like?",
+      "korean": "키 큰 남자가 문 근처에 서 있다.",
+      "english": "A tall man stands near the door.",
+      "chunks": [
+        {
+          "text": "A tall man",
+          "role": "Subject",
+          "color": "#FF0000"
+        },
+        {
+          "text": "stands",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "near the door",
+          "role": "Modifier",
+          "color": "#B0BEC5"
+        }
+      ],
+      "context": "Core Lesson",
+      "grammarGuide": null
+    },
+    {
+      "id": "2-22-8",
+      "section": "Day 22",
+      "description": "Core Lesson",
+      "question": "What does My mom do?",
+      "korean": "우리 엄마는 맛있는 음식을 요리한다.",
+      "english": "My mom cooks delicious food.",
+      "chunks": [
+        {
+          "text": "My mom",
+          "role": "Subject",
+          "color": "#FF0000"
+        },
+        {
+          "text": "cooks",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "delicious food",
+          "role": "Object",
+          "color": "#FFD700"
+        }
+      ],
+      "context": "Core Lesson",
+      "grammarGuide": null
+    },
+    {
+      "id": "2-22-9",
+      "section": "Day 22",
+      "description": "Core Lesson",
+      "question": "What is happening?",
+      "korean": "빠른 차가 갑자기 멈춘다.",
+      "english": "The fast car stops suddenly.",
+      "chunks": [
+        {
+          "text": "The fast car",
+          "role": "Subject",
+          "color": "#FF0000"
+        },
+        {
+          "text": "stops",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "suddenly",
+          "role": "Adverb",
+          "color": "#BA68C8"
+        }
+      ],
+      "context": "Core Lesson",
+      "grammarGuide": null
+    },
+    {
+      "id": "2-22-10",
+      "section": "Day 22",
+      "description": "Core Lesson",
+      "question": "What is happening?",
+      "korean": "파란 하늘이 아름다워 보인다.",
+      "english": "Blue sky looks beautiful.",
+      "chunks": [
+        {
+          "text": "Blue sky",
+          "role": "Subject",
+          "color": "#FF0000"
+        },
+        {
+          "text": "looks",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "beautiful",
+          "role": "Complement",
+          "color": "#BA68C8"
+        }
+      ],
+      "context": "Core Lesson",
+      "grammarGuide": null
+    },
+    {
+      "id": "2-23-1",
+      "section": "Day 23",
+      "description": "Core Lesson",
+      "question": "How does it feel?",
+      "korean": "나는 달콤한 케이크를 먹고 싶다.",
+      "english": "I want to eat a sweet cake.",
+      "chunks": [
+        {
+          "text": "I",
+          "role": "Subject",
+          "color": "#FF0000"
+        },
+        {
+          "text": "want",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "to eat a sweet cake",
+          "role": "Object",
+          "color": "#FFD700"
+        }
+      ],
+      "context": "Core Lesson",
+      "grammarGuide": {
+        "title": "Core Lesson",
+        "structure": [
+          {
+            "text": "Subject",
+            "color": "#FF0000"
+          },
+          {
+            "text": "Verb",
+            "color": "#FF7F00"
+          },
+          {
+            "text": "Object",
+            "color": "#FFD700"
+          }
+        ]
+      }
+    },
+    {
+      "id": "2-23-2",
+      "section": "Day 23",
+      "description": "Core Lesson",
+      "question": "Where does this happen?",
+      "korean": "그녀는 인형을 가지고 노는 것을 좋아한다.",
+      "english": "She likes to play with dolls.",
+      "chunks": [
+        {
+          "text": "She",
+          "role": "Subject",
+          "color": "#FF0000"
+        },
+        {
+          "text": "likes",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "to play with dolls",
+          "role": "Object",
+          "color": "#FFD700"
+        }
+      ],
+      "context": "Core Lesson",
+      "grammarGuide": null
+    },
+    {
+      "id": "2-23-3",
+      "section": "Day 23",
+      "description": "Core Lesson",
+      "question": "How does someone feel?",
+      "korean": "차 안의 소년은 슬프다.",
+      "english": "The boy in the car is sad.",
+      "chunks": [
+        {
+          "text": "The boy",
+          "role": "Subject",
+          "color": "#FF0000"
+        },
+        {
+          "text": "in the car",
+          "role": "Modifier",
+          "color": "#B0BEC5"
+        },
+        {
+          "text": "is",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "sad",
+          "role": "Complement",
+          "color": "#BA68C8"
+        }
+      ],
+      "context": "Core Lesson",
+      "grammarGuide": null
+    },
+    {
+      "id": "2-23-4",
+      "section": "Day 23",
+      "description": "Core Lesson",
+      "question": "How does someone feel?",
+      "korean": "버스 안의 사람들은 피곤하다.",
+      "english": "People on the bus are tired.",
+      "chunks": [
+        {
+          "text": "People",
+          "role": "Subject",
+          "color": "#FF0000"
+        },
+        {
+          "text": "on the bus",
+          "role": "Modifier",
+          "color": "#B0BEC5"
+        },
+        {
+          "text": "are",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "tired",
+          "role": "Complement",
+          "color": "#BA68C8"
+        }
+      ],
+      "context": "Core Lesson",
+      "grammarGuide": null
+    },
+    {
+      "id": "2-23-5",
+      "section": "Day 23",
+      "description": "Core Lesson",
+      "question": "Where does this happen?",
+      "korean": "그는 버스를 잡으려고 빨리 달린다.",
+      "english": "He runs fast to catch the bus.",
+      "chunks": [
+        {
+          "text": "He",
+          "role": "Subject",
+          "color": "#FF0000"
+        },
+        {
+          "text": "runs",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "fast",
+          "role": "Adverb",
+          "color": "#BA68C8"
+        },
+        {
+          "text": "to catch the bus",
+          "role": "Modifier",
+          "color": "#B0BEC5"
+        }
+      ],
+      "context": "Core Lesson",
+      "grammarGuide": null
+    },
+    {
+      "id": "2-23-6",
+      "section": "Day 23",
+      "description": "Core Lesson",
+      "question": "Where does this happen?",
+      "korean": "우리는 놀러 공원에 간다.",
+      "english": "We go to the park to play.",
+      "chunks": [
+        {
+          "text": "We",
+          "role": "Subject",
+          "color": "#FF0000"
+        },
+        {
+          "text": "go",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "to the park",
+          "role": "Modifier",
+          "color": "#B0BEC5"
+        },
+        {
+          "text": "to play",
+          "role": "Modifier",
+          "color": "#B0BEC5"
+        }
+      ],
+      "context": "Core Lesson",
+      "grammarGuide": null
+    },
+    {
+      "id": "2-23-7",
+      "section": "Day 23",
+      "description": "Core Lesson",
+      "question": "What should you do?",
+      "korean": "저 위의 밝은 달을 봐라.",
+      "english": "Look at the bright moon above.",
+      "chunks": [
+        {
+          "text": "Look at",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "the bright moon",
+          "role": "Object",
+          "color": "#FFD700"
+        },
+        {
+          "text": "above",
+          "role": "Modifier",
+          "color": "#B0BEC5"
+        }
+      ],
+      "context": "Core Lesson",
+      "grammarGuide": null
+    },
+    {
+      "id": "2-23-8",
+      "section": "Day 23",
+      "description": "Core Lesson",
+      "question": "What is happening?",
+      "korean": "상자 안의 선물은 좋다.",
+      "english": "The gift inside the box is nice.",
+      "chunks": [
+        {
+          "text": "The gift",
+          "role": "Subject",
+          "color": "#FF0000"
+        },
+        {
+          "text": "inside the box",
+          "role": "Modifier",
+          "color": "#B0BEC5"
+        },
+        {
+          "text": "is",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "nice",
+          "role": "Complement",
+          "color": "#BA68C8"
+        }
+      ],
+      "context": "Core Lesson",
+      "grammarGuide": null
+    },
+    {
+      "id": "2-23-9",
+      "section": "Day 23",
+      "description": "Core Lesson",
+      "question": "Where does this happen?",
+      "korean": "얼음 위를 천천히 걸어라.",
+      "english": "Walk slowly on the ice.",
+      "chunks": [
+        {
+          "text": "Walk",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "slowly",
+          "role": "Adverb",
+          "color": "#BA68C8"
+        },
+        {
+          "text": "on the ice",
+          "role": "Modifier",
+          "color": "#B0BEC5"
+        }
+      ],
+      "context": "Core Lesson",
+      "grammarGuide": null
+    },
+    {
+      "id": "2-23-10",
+      "section": "Day 23",
+      "description": "Core Lesson",
+      "question": "When does this happen?",
+      "korean": "학교를 위해 일찍 자라.",
+      "english": "Sleep early for school.",
+      "chunks": [
+        {
+          "text": "Sleep",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "early",
+          "role": "Adverb",
+          "color": "#BA68C8"
+        },
+        {
+          "text": "for school",
+          "role": "Modifier",
+          "color": "#B0BEC5"
+        }
+      ],
+      "context": "Core Lesson",
+      "grammarGuide": null
+    },
+    {
+      "id": "2-24-1",
+      "section": "Day 24",
+      "description": "Core Lesson",
+      "question": "Answer this question.",
+      "korean": "빨간 가방 어디 있니?",
+      "english": "Where is the red bag?",
+      "chunks": [
+        {
+          "text": "Where",
+          "role": "Modifier",
+          "color": "#B0BEC5"
+        },
+        {
+          "text": "is",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "the red bag",
+          "role": "Subject",
+          "color": "#FF0000"
+        }
+      ],
+      "context": "Core Lesson",
+      "grammarGuide": {
+        "title": "Core Lesson",
+        "structure": [
+          {
+            "text": "Modifier",
+            "color": "#B0BEC5"
+          },
+          {
+            "text": "Verb",
+            "color": "#FF7F00"
+          },
+          {
+            "text": "Subject",
+            "color": "#FF0000"
+          }
+        ]
+      }
+    },
+    {
+      "id": "2-24-2",
+      "section": "Day 24",
+      "description": "Core Lesson",
+      "question": "Answer this question.",
+      "korean": "저 키 큰 남자는 누구니?",
+      "english": "Who is the tall man?",
+      "chunks": [
+        {
+          "text": "Who",
+          "role": "Complement",
+          "color": "#BA68C8"
+        },
+        {
+          "text": "is",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "the tall man",
+          "role": "Subject",
+          "color": "#FF0000"
+        }
+      ],
+      "context": "Core Lesson",
+      "grammarGuide": null
+    },
+    {
+      "id": "2-24-3",
+      "section": "Day 24",
+      "description": "Core Lesson",
+      "question": "Answer this question.",
+      "korean": "너 왜 슬프니?",
+      "english": "Why are you sad?",
+      "chunks": [
+        {
+          "text": "Why",
+          "role": "Modifier",
+          "color": "#B0BEC5"
+        },
+        {
+          "text": "are",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "you",
+          "role": "Subject",
+          "color": "#FF0000"
+        },
+        {
+          "text": "sad",
+          "role": "Complement",
+          "color": "#BA68C8"
+        }
+      ],
+      "context": "Core Lesson",
+      "grammarGuide": null
+    },
+    {
+      "id": "2-24-4",
+      "section": "Day 24",
+      "description": "Core Lesson",
+      "question": "Answer this question.",
+      "korean": "학교에 어떻게 가니?",
+      "english": "How do you go to school?",
+      "chunks": [
+        {
+          "text": "How",
+          "role": "Modifier",
+          "color": "#B0BEC5"
+        },
+        {
+          "text": "do you go",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "to school",
+          "role": "Modifier",
+          "color": "#B0BEC5"
+        }
+      ],
+      "context": "Core Lesson",
+      "grammarGuide": null
+    },
+    {
+      "id": "2-24-5",
+      "section": "Day 24",
+      "description": "Core Lesson",
+      "question": "Answer this question.",
+      "korean": "지금 몇 시니?",
+      "english": "What time is it now?",
+      "chunks": [
+        {
+          "text": "What time",
+          "role": "Complement",
+          "color": "#BA68C8"
+        },
+        {
+          "text": "is",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "it",
+          "role": "Subject",
+          "color": "#FF0000"
+        },
+        {
+          "text": "now",
+          "role": "Adverb",
+          "color": "#BA68C8"
+        }
+      ],
+      "context": "Core Lesson",
+      "grammarGuide": null
+    },
+    {
+      "id": "2-24-6",
+      "section": "Day 24",
+      "description": "Core Lesson",
+      "question": "What should you do?",
+      "korean": "너 빨리 달릴 수 있니?",
+      "english": "Can you run fast?",
+      "chunks": [
+        {
+          "text": "Can you run",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "fast",
+          "role": "Adverb",
+          "color": "#BA68C8"
+        }
+      ],
+      "context": "Core Lesson",
+      "grammarGuide": null
+    },
+    {
+      "id": "2-24-7",
+      "section": "Day 24",
+      "description": "Core Lesson",
+      "question": "What should you do?",
+      "korean": "매운 음식 좋아하니?",
+      "english": "Do you like spicy food?",
+      "chunks": [
+        {
+          "text": "Do you like",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "spicy food",
+          "role": "Object",
+          "color": "#FFD700"
+        }
+      ],
+      "context": "Core Lesson",
+      "grammarGuide": null
+    },
+    {
+      "id": "2-24-8",
+      "section": "Day 24",
+      "description": "Core Lesson",
+      "question": "Answer this question.",
+      "korean": "물 차갑니?",
+      "english": "Is the water cold?",
+      "chunks": [
+        {
+          "text": "Is",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "the water",
+          "role": "Subject",
+          "color": "#FF0000"
+        },
+        {
+          "text": "cold",
+          "role": "Complement",
+          "color": "#BA68C8"
+        }
+      ],
+      "context": "Core Lesson",
+      "grammarGuide": null
+    },
+    {
+      "id": "2-24-9",
+      "section": "Day 24",
+      "description": "Core Lesson",
+      "question": "Answer this question.",
+      "korean": "그들은 행복하니?",
+      "english": "Are they happy?",
+      "chunks": [
+        {
+          "text": "Are",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "they",
+          "role": "Subject",
+          "color": "#FF0000"
+        },
+        {
+          "text": "happy",
+          "role": "Complement",
+          "color": "#BA68C8"
+        }
+      ],
+      "context": "Core Lesson",
+      "grammarGuide": null
+    },
+    {
+      "id": "2-24-10",
+      "section": "Day 24",
+      "description": "Core Lesson",
+      "question": "What should you do?",
+      "korean": "그는 어디에 사니?",
+      "english": "Where does he live?",
+      "chunks": [
+        {
+          "text": "Where",
+          "role": "Modifier",
+          "color": "#B0BEC5"
+        },
+        {
+          "text": "does he live",
+          "role": "Verb",
+          "color": "#FF7F00"
+        }
+      ],
+      "context": "Core Lesson",
+      "grammarGuide": null
+    },
+    {
+      "id": "2-25-1",
+      "section": "Day 25",
+      "description": "Core Lesson",
+      "question": "What should you do?",
+      "korean": "뜨거운 냄비를 만지지 마라.",
+      "english": "Don't touch the hot pot.",
+      "chunks": [
+        {
+          "text": "Don't touch",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "the hot pot",
+          "role": "Object",
+          "color": "#FFD700"
+        }
+      ],
+      "context": "Core Lesson",
+      "grammarGuide": {
+        "title": "Core Lesson",
+        "structure": [
+          {
+            "text": "Verb",
+            "color": "#FF7F00"
+          },
+          {
+            "text": "Object",
+            "color": "#FFD700"
+          }
+        ]
+      }
+    },
+    {
+      "id": "2-25-2",
+      "section": "Day 25",
+      "description": "Core Lesson",
+      "question": "What should you do?",
+      "korean": "푸른 들판을 가로질러 걸어라.",
+      "english": "Walk across the green field.",
+      "chunks": [
+        {
+          "text": "Walk",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "across the green field",
+          "role": "Modifier",
+          "color": "#B0BEC5"
+        }
+      ],
+      "context": "Core Lesson",
+      "grammarGuide": null
+    },
+    {
+      "id": "2-25-3",
+      "section": "Day 25",
+      "description": "Core Lesson",
+      "question": "What should you do?",
+      "korean": "책을 책상 위에 두어라.",
+      "english": "Put the book on the desk.",
+      "chunks": [
+        {
+          "text": "Put",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "the book",
+          "role": "Object",
+          "color": "#FFD700"
+        },
+        {
+          "text": "on the desk",
+          "role": "Modifier",
+          "color": "#B0BEC5"
+        }
+      ],
+      "context": "Core Lesson",
+      "grammarGuide": null
+    },
+    {
+      "id": "2-25-4",
+      "section": "Day 25",
+      "description": "Core Lesson",
+      "question": "What does Give do?",
+      "korean": "파란 펜을 나에게 줘.",
+      "english": "Give me the blue pen.",
+      "chunks": [
+        {
+          "text": "Give",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "me",
+          "role": "Object",
+          "color": "#FFD700"
+        },
+        {
+          "text": "the blue pen",
+          "role": "Object",
+          "color": "#FFD700"
+        }
+      ],
+      "context": "Core Lesson",
+      "grammarGuide": null
+    },
+    {
+      "id": "2-25-5",
+      "section": "Day 25",
+      "description": "Core Lesson",
+      "question": "Where does this happen?",
+      "korean": "친구들에게 친절해라.",
+      "english": "Be nice to your friends.",
+      "chunks": [
+        {
+          "text": "Be",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "nice",
+          "role": "Complement",
+          "color": "#BA68C8"
+        },
+        {
+          "text": "to your friends",
+          "role": "Modifier",
+          "color": "#B0BEC5"
+        }
+      ],
+      "context": "Core Lesson",
+      "grammarGuide": null
+    },
+    {
+      "id": "2-25-6",
+      "section": "Day 25",
+      "description": "Core Lesson",
+      "question": "What should you do?",
+      "korean": "선생님 말을 주의 깊게 들어라.",
+      "english": "Listen to the teacher carefully.",
+      "chunks": [
+        {
+          "text": "Listen",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "to the teacher",
+          "role": "Modifier",
+          "color": "#B0BEC5"
+        },
+        {
+          "text": "carefully",
+          "role": "Adverb",
+          "color": "#BA68C8"
+        }
+      ],
+      "context": "Core Lesson",
+      "grammarGuide": null
+    },
+    {
+      "id": "2-25-7",
+      "section": "Day 25",
+      "description": "Core Lesson",
+      "question": "What should you do?",
+      "korean": "복도에서 뛰어다니지 마.",
+      "english": "Don't run in the hall.",
+      "chunks": [
+        {
+          "text": "Don't run",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "in the hall",
+          "role": "Modifier",
+          "color": "#B0BEC5"
+        }
+      ],
+      "context": "Core Lesson",
+      "grammarGuide": null
+    },
+    {
+      "id": "2-25-8",
+      "section": "Day 25",
+      "description": "Core Lesson",
+      "question": "What should you do?",
+      "korean": "지금 네 방을 청소해.",
+      "english": "Clean your room now.",
+      "chunks": [
+        {
+          "text": "Clean",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "your room",
+          "role": "Object",
+          "color": "#FFD700"
+        },
+        {
+          "text": "now",
+          "role": "Adverb",
+          "color": "#BA68C8"
+        }
+      ],
+      "context": "Core Lesson",
+      "grammarGuide": null
+    },
+    {
+      "id": "2-25-9",
+      "section": "Day 25",
+      "description": "Core Lesson",
+      "question": "What should you do?",
+      "korean": "창문 좀 열어줘.",
+      "english": "Open the window please.",
+      "chunks": [
+        {
+          "text": "Open",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "the window",
+          "role": "Object",
+          "color": "#FFD700"
+        },
+        {
+          "text": "please",
+          "role": "Modifier",
+          "color": "#B0BEC5"
+        }
+      ],
+      "context": "Core Lesson",
+      "grammarGuide": null
+    },
+    {
+      "id": "2-25-10",
+      "section": "Day 25",
+      "description": "Core Lesson",
+      "question": "What should you do?",
+      "korean": "할머니를 도와드려라.",
+      "english": "Help the old lady.",
+      "chunks": [
+        {
+          "text": "Help",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "the old lady",
+          "role": "Object",
+          "color": "#FFD700"
+        }
+      ],
+      "context": "Core Lesson",
+      "grammarGuide": null
+    },
+    {
+      "id": "2-26-1",
+      "section": "Day 26",
+      "description": "Review",
+      "question": "Answer this question.",
+      "korean": "지금 몇 시니?",
+      "english": "What time is it now?",
+      "chunks": [
+        {
+          "text": "What time",
+          "role": "Complement",
+          "color": "#BA68C8"
+        },
+        {
+          "text": "is",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "it",
+          "role": "Subject",
+          "color": "#FF0000"
+        },
+        {
+          "text": "now",
+          "role": "Adverb",
+          "color": "#BA68C8"
+        }
+      ],
+      "context": "Review",
+      "grammarGuide": {
+        "title": "Review",
+        "structure": [
+          {
+            "text": "Complement",
+            "color": "#BA68C8"
+          },
+          {
+            "text": "Verb",
+            "color": "#FF7F00"
+          },
+          {
+            "text": "Subject",
+            "color": "#FF0000"
+          },
+          {
+            "text": "Adverb",
+            "color": "#BA68C8"
+          }
+        ]
+      }
+    },
+    {
+      "id": "2-26-2",
+      "section": "Day 26",
+      "description": "Review",
+      "question": "What does Give do?",
+      "korean": "파란 펜을 나에게 줘.",
+      "english": "Give me the blue pen.",
+      "chunks": [
+        {
+          "text": "Give",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "me",
+          "role": "Object",
+          "color": "#FFD700"
+        },
+        {
+          "text": "the blue pen",
+          "role": "Object",
+          "color": "#FFD700"
+        }
+      ],
+      "context": "Review",
+      "grammarGuide": null
+    },
+    {
+      "id": "2-26-3",
+      "section": "Day 26",
+      "description": "Review",
+      "question": "Where does this happen?",
+      "korean": "친구들에게 친절해라.",
+      "english": "Be nice to your friends.",
+      "chunks": [
+        {
+          "text": "Be",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "nice",
+          "role": "Complement",
+          "color": "#BA68C8"
+        },
+        {
+          "text": "to your friends",
+          "role": "Modifier",
+          "color": "#B0BEC5"
+        }
+      ],
+      "context": "Review",
+      "grammarGuide": null
+    },
+    {
+      "id": "2-26-4",
+      "section": "Day 26",
+      "description": "Review",
+      "question": "Where does this happen?",
+      "korean": "얼음 위를 천천히 걸어라.",
+      "english": "Walk slowly on the ice.",
+      "chunks": [
+        {
+          "text": "Walk",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "slowly",
+          "role": "Adverb",
+          "color": "#BA68C8"
+        },
+        {
+          "text": "on the ice",
+          "role": "Modifier",
+          "color": "#B0BEC5"
+        }
+      ],
+      "context": "Review",
+      "grammarGuide": null
+    },
+    {
+      "id": "2-26-5",
+      "section": "Day 26",
+      "description": "Review",
+      "question": "What should you do?",
+      "korean": "책을 책상 위에 두어라.",
+      "english": "Put the book on the desk.",
+      "chunks": [
+        {
+          "text": "Put",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "the book",
+          "role": "Object",
+          "color": "#FFD700"
+        },
+        {
+          "text": "on the desk",
+          "role": "Modifier",
+          "color": "#B0BEC5"
+        }
+      ],
+      "context": "Review",
+      "grammarGuide": null
+    },
+    {
+      "id": "2-26-6",
+      "section": "Day 26",
+      "description": "Review",
+      "question": "What is happening?",
+      "korean": "상자 안의 선물은 좋다.",
+      "english": "The gift inside the box is nice.",
+      "chunks": [
+        {
+          "text": "The gift",
+          "role": "Subject",
+          "color": "#FF0000"
+        },
+        {
+          "text": "inside the box",
+          "role": "Modifier",
+          "color": "#B0BEC5"
+        },
+        {
+          "text": "is",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "nice",
+          "role": "Complement",
+          "color": "#BA68C8"
+        }
+      ],
+      "context": "Review",
+      "grammarGuide": null
+    },
+    {
+      "id": "2-26-7",
+      "section": "Day 26",
+      "description": "Review",
+      "question": "When does this happen?",
+      "korean": "학교를 위해 일찍 자라.",
+      "english": "Sleep early for school.",
+      "chunks": [
+        {
+          "text": "Sleep",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "early",
+          "role": "Adverb",
+          "color": "#BA68C8"
+        },
+        {
+          "text": "for school",
+          "role": "Modifier",
+          "color": "#B0BEC5"
+        }
+      ],
+      "context": "Review",
+      "grammarGuide": null
+    },
+    {
+      "id": "2-26-8",
+      "section": "Day 26",
+      "description": "Review",
+      "question": "How does someone feel?",
+      "korean": "차 안의 소년은 슬프다.",
+      "english": "The boy in the car is sad.",
+      "chunks": [
+        {
+          "text": "The boy",
+          "role": "Subject",
+          "color": "#FF0000"
+        },
+        {
+          "text": "in the car",
+          "role": "Modifier",
+          "color": "#B0BEC5"
+        },
+        {
+          "text": "is",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "sad",
+          "role": "Complement",
+          "color": "#BA68C8"
+        }
+      ],
+      "context": "Review",
+      "grammarGuide": null
+    },
+    {
+      "id": "2-26-9",
+      "section": "Day 26",
+      "description": "Review",
+      "question": "What should you do?",
+      "korean": "할머니를 도와드려라.",
+      "english": "Help the old lady.",
+      "chunks": [
+        {
+          "text": "Help",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "the old lady",
+          "role": "Object",
+          "color": "#FFD700"
+        }
+      ],
+      "context": "Review",
+      "grammarGuide": null
+    },
+    {
+      "id": "2-26-10",
+      "section": "Day 26",
+      "description": "Review",
+      "question": "Answer this question.",
+      "korean": "빨간 가방 어디 있니?",
+      "english": "Where is the red bag?",
+      "chunks": [
+        {
+          "text": "Where",
+          "role": "Modifier",
+          "color": "#B0BEC5"
+        },
+        {
+          "text": "is",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "the red bag",
+          "role": "Subject",
+          "color": "#FF0000"
+        }
+      ],
+      "context": "Review",
+      "grammarGuide": null
+    },
+    {
+      "id": "2-27-1",
+      "section": "Day 27",
+      "description": "Review",
+      "question": "What should you do?",
+      "korean": "푸른 들판을 가로질러 걸어라.",
+      "english": "Walk across the green field.",
+      "chunks": [
+        {
+          "text": "Walk",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "across the green field",
+          "role": "Modifier",
+          "color": "#B0BEC5"
+        }
+      ],
+      "context": "Review",
+      "grammarGuide": {
+        "title": "Review",
+        "structure": [
+          {
+            "text": "Verb",
+            "color": "#FF7F00"
+          },
+          {
+            "text": "Modifier",
+            "color": "#B0BEC5"
+          }
+        ]
+      }
+    },
+    {
+      "id": "2-27-2",
+      "section": "Day 27",
+      "description": "Review",
+      "question": "How does it feel?",
+      "korean": "나는 달콤한 케이크를 먹고 싶다.",
+      "english": "I want to eat a sweet cake.",
+      "chunks": [
+        {
+          "text": "I",
+          "role": "Subject",
+          "color": "#FF0000"
+        },
+        {
+          "text": "want",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "to eat a sweet cake",
+          "role": "Object",
+          "color": "#FFD700"
+        }
+      ],
+      "context": "Review",
+      "grammarGuide": null
+    },
+    {
+      "id": "2-27-3",
+      "section": "Day 27",
+      "description": "Review",
+      "question": "What should you do?",
+      "korean": "창문 좀 열어줘.",
+      "english": "Open the window please.",
+      "chunks": [
+        {
+          "text": "Open",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "the window",
+          "role": "Object",
+          "color": "#FFD700"
+        },
+        {
+          "text": "please",
+          "role": "Modifier",
+          "color": "#B0BEC5"
+        }
+      ],
+      "context": "Review",
+      "grammarGuide": null
+    },
+    {
+      "id": "2-27-4",
+      "section": "Day 27",
+      "description": "Review",
+      "question": "What is happening?",
+      "korean": "파란 하늘이 아름다워 보인다.",
+      "english": "Blue sky looks beautiful.",
+      "chunks": [
+        {
+          "text": "Blue sky",
+          "role": "Subject",
+          "color": "#FF0000"
+        },
+        {
+          "text": "looks",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "beautiful",
+          "role": "Complement",
+          "color": "#BA68C8"
+        }
+      ],
+      "context": "Review",
+      "grammarGuide": null
+    },
+    {
+      "id": "2-27-5",
+      "section": "Day 27",
+      "description": "Review",
+      "question": "What is happening?",
+      "korean": "상자 안의 선물은 좋다.",
+      "english": "The gift inside the box is nice.",
+      "chunks": [
+        {
+          "text": "The gift",
+          "role": "Subject",
+          "color": "#FF0000"
+        },
+        {
+          "text": "inside the box",
+          "role": "Modifier",
+          "color": "#B0BEC5"
+        },
+        {
+          "text": "is",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "nice",
+          "role": "Complement",
+          "color": "#BA68C8"
+        }
+      ],
+      "context": "Review",
+      "grammarGuide": null
+    },
+    {
+      "id": "2-27-6",
+      "section": "Day 27",
+      "description": "Review",
+      "question": "Where does this happen?",
+      "korean": "그녀는 인형을 가지고 노는 것을 좋아한다.",
+      "english": "She likes to play with dolls.",
+      "chunks": [
+        {
+          "text": "She",
+          "role": "Subject",
+          "color": "#FF0000"
+        },
+        {
+          "text": "likes",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "to play with dolls",
+          "role": "Object",
+          "color": "#FFD700"
+        }
+      ],
+      "context": "Review",
+      "grammarGuide": null
+    },
+    {
+      "id": "2-27-7",
+      "section": "Day 27",
+      "description": "Review",
+      "question": "What should you do?",
+      "korean": "그는 어디에 사니?",
+      "english": "Where does he live?",
+      "chunks": [
+        {
+          "text": "Where",
+          "role": "Modifier",
+          "color": "#B0BEC5"
+        },
+        {
+          "text": "does he live",
+          "role": "Verb",
+          "color": "#FF7F00"
+        }
+      ],
+      "context": "Review",
+      "grammarGuide": null
+    },
+    {
+      "id": "2-27-8",
+      "section": "Day 27",
+      "description": "Review",
+      "question": "What does It look like?",
+      "korean": "키 큰 남자가 문 근처에 서 있다.",
+      "english": "A tall man stands near the door.",
+      "chunks": [
+        {
+          "text": "A tall man",
+          "role": "Subject",
+          "color": "#FF0000"
+        },
+        {
+          "text": "stands",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "near the door",
+          "role": "Modifier",
+          "color": "#B0BEC5"
+        }
+      ],
+      "context": "Review",
+      "grammarGuide": null
+    },
+    {
+      "id": "2-27-9",
+      "section": "Day 27",
+      "description": "Review",
+      "question": "What does Give do?",
+      "korean": "파란 펜을 나에게 줘.",
+      "english": "Give me the blue pen.",
+      "chunks": [
+        {
+          "text": "Give",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "me",
+          "role": "Object",
+          "color": "#FFD700"
+        },
+        {
+          "text": "the blue pen",
+          "role": "Object",
+          "color": "#FFD700"
+        }
+      ],
+      "context": "Review",
+      "grammarGuide": null
+    },
+    {
+      "id": "2-27-10",
+      "section": "Day 27",
+      "description": "Review",
+      "question": "Where does this happen?",
+      "korean": "얼음 위를 천천히 걸어라.",
+      "english": "Walk slowly on the ice.",
+      "chunks": [
+        {
+          "text": "Walk",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "slowly",
+          "role": "Adverb",
+          "color": "#BA68C8"
+        },
+        {
+          "text": "on the ice",
+          "role": "Modifier",
+          "color": "#B0BEC5"
+        }
+      ],
+      "context": "Review",
+      "grammarGuide": null
+    },
+    {
+      "id": "2-28-1",
+      "section": "Day 28",
+      "description": "Review",
+      "question": "How does it feel?",
+      "korean": "우리는 시원한 강에서 수영한다.",
+      "english": "We swim in the cool river.",
+      "chunks": [
+        {
+          "text": "We",
+          "role": "Subject",
+          "color": "#FF0000"
+        },
+        {
+          "text": "swim",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "in the cool river",
+          "role": "Modifier",
+          "color": "#B0BEC5"
+        }
+      ],
+      "context": "Review",
+      "grammarGuide": {
+        "title": "Review",
+        "structure": [
+          {
+            "text": "Subject",
+            "color": "#FF0000"
+          },
+          {
+            "text": "Verb",
+            "color": "#FF7F00"
+          },
+          {
+            "text": "Modifier",
+            "color": "#B0BEC5"
+          }
+        ]
+      }
+    },
+    {
+      "id": "2-28-2",
+      "section": "Day 28",
+      "description": "Review",
+      "question": "What should you do?",
+      "korean": "복도에서 뛰어다니지 마.",
+      "english": "Don't run in the hall.",
+      "chunks": [
+        {
+          "text": "Don't run",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "in the hall",
+          "role": "Modifier",
+          "color": "#B0BEC5"
+        }
+      ],
+      "context": "Review",
+      "grammarGuide": null
+    },
+    {
+      "id": "2-28-3",
+      "section": "Day 28",
+      "description": "Review",
+      "question": "Answer this question.",
+      "korean": "너 왜 슬프니?",
+      "english": "Why are you sad?",
+      "chunks": [
+        {
+          "text": "Why",
+          "role": "Modifier",
+          "color": "#B0BEC5"
+        },
+        {
+          "text": "are",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "you",
+          "role": "Subject",
+          "color": "#FF0000"
+        },
+        {
+          "text": "sad",
+          "role": "Complement",
+          "color": "#BA68C8"
+        }
+      ],
+      "context": "Review",
+      "grammarGuide": null
+    },
+    {
+      "id": "2-28-4",
+      "section": "Day 28",
+      "description": "Review",
+      "question": "What is happening?",
+      "korean": "상자 안의 선물은 좋다.",
+      "english": "The gift inside the box is nice.",
+      "chunks": [
+        {
+          "text": "The gift",
+          "role": "Subject",
+          "color": "#FF0000"
+        },
+        {
+          "text": "inside the box",
+          "role": "Modifier",
+          "color": "#B0BEC5"
+        },
+        {
+          "text": "is",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "nice",
+          "role": "Complement",
+          "color": "#BA68C8"
+        }
+      ],
+      "context": "Review",
+      "grammarGuide": null
+    },
+    {
+      "id": "2-28-5",
+      "section": "Day 28",
+      "description": "Review",
+      "question": "What should you do?",
+      "korean": "지금 네 방을 청소해.",
+      "english": "Clean your room now.",
+      "chunks": [
+        {
+          "text": "Clean",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "your room",
+          "role": "Object",
+          "color": "#FFD700"
+        },
+        {
+          "text": "now",
+          "role": "Adverb",
+          "color": "#BA68C8"
+        }
+      ],
+      "context": "Review",
+      "grammarGuide": null
+    },
+    {
+      "id": "2-28-6",
+      "section": "Day 28",
+      "description": "Review",
+      "question": "Where does this happen?",
+      "korean": "그녀는 인형을 가지고 노는 것을 좋아한다.",
+      "english": "She likes to play with dolls.",
+      "chunks": [
+        {
+          "text": "She",
+          "role": "Subject",
+          "color": "#FF0000"
+        },
+        {
+          "text": "likes",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "to play with dolls",
+          "role": "Object",
+          "color": "#FFD700"
+        }
+      ],
+      "context": "Review",
+      "grammarGuide": null
+    },
+    {
+      "id": "2-28-7",
+      "section": "Day 28",
+      "description": "Review",
+      "question": "How does someone feel?",
+      "korean": "버스 안의 사람들은 피곤하다.",
+      "english": "People on the bus are tired.",
+      "chunks": [
+        {
+          "text": "People",
+          "role": "Subject",
+          "color": "#FF0000"
+        },
+        {
+          "text": "on the bus",
+          "role": "Modifier",
+          "color": "#B0BEC5"
+        },
+        {
+          "text": "are",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "tired",
+          "role": "Complement",
+          "color": "#BA68C8"
+        }
+      ],
+      "context": "Review",
+      "grammarGuide": null
+    },
+    {
+      "id": "2-28-8",
+      "section": "Day 28",
+      "description": "Review",
+      "question": "What is happening?",
+      "korean": "파란 하늘이 아름다워 보인다.",
+      "english": "Blue sky looks beautiful.",
+      "chunks": [
+        {
+          "text": "Blue sky",
+          "role": "Subject",
+          "color": "#FF0000"
+        },
+        {
+          "text": "looks",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "beautiful",
+          "role": "Complement",
+          "color": "#BA68C8"
+        }
+      ],
+      "context": "Review",
+      "grammarGuide": null
+    },
+    {
+      "id": "2-28-9",
+      "section": "Day 28",
+      "description": "Review",
+      "question": "Answer this question.",
+      "korean": "빨간 가방 어디 있니?",
+      "english": "Where is the red bag?",
+      "chunks": [
+        {
+          "text": "Where",
+          "role": "Modifier",
+          "color": "#B0BEC5"
+        },
+        {
+          "text": "is",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "the red bag",
+          "role": "Subject",
+          "color": "#FF0000"
+        }
+      ],
+      "context": "Review",
+      "grammarGuide": null
+    },
+    {
+      "id": "2-28-10",
+      "section": "Day 28",
+      "description": "Review",
+      "question": "What should you do?",
+      "korean": "뜨거운 냄비를 만지지 마라.",
+      "english": "Don't touch the hot pot.",
+      "chunks": [
+        {
+          "text": "Don't touch",
+          "role": "Verb",
+          "color": "#FF7F00"
+        },
+        {
+          "text": "the hot pot",
+          "role": "Object",
+          "color": "#FFD700"
+        }
+      ],
+      "context": "Review",
+      "grammarGuide": null
+    }
+  ]
+}
