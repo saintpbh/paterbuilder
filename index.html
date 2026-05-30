@@ -80,17 +80,6 @@
             <div class="sentence-progress">
                 <div class="sentence-progress-header">
                     <span id="sentence-counter">Sentence 1 of 10</span>
-                    <!-- Move audio speed controls inside the HUD bar for better containment -->
-                    <div class="audio-controls-embedded">
-                        <button id="tts-toggle-btn" class="tts-toggle-btn" onclick="toggleTTS()" title="TTS On/Off">🔇 Voice Off</button>
-                        <select id="voice-select" class="voice-select" onchange="changeVoice(this.value)" title="Choose English Voice">
-                            <option value="" style="color: black;">Loading Voices...</option>
-                        </select>
-                        <button class="speed-btn" onclick="changeSpeed(0.75)">0.75×</button>
-                        <button class="speed-btn active" onclick="changeSpeed(1.0)">1.0×</button>
-                        <button class="speed-btn" onclick="changeSpeed(1.25)">1.25×</button>
-                        <button class="speed-btn" onclick="changeSpeed(1.5)">1.5×</button>
-                    </div>
                 </div>
                 <div class="progress-bar">
                     <div class="progress-fill" id="progress-fill" style="width: 0%"></div>
@@ -307,27 +296,57 @@
 
     <!-- API Settings Modal -->
     <div id="settings-modal" class="settings-modal modal-overlay hidden">
-        <div class="settings-content modal-content">
+        <div class="settings-content modal-content" style="max-width: 500px;">
             <div class="settings-header">
-                <h2>⚙️ AI 코치 API 설정</h2>
+                <h2>⚙️ 학습 환경 설정</h2>
                 <button class="modal-close-btn" onclick="closeSettings()">×</button>
             </div>
             <div class="settings-body">
-                <p>더 똑똑하고 상세한 개별 맞춤 문법 분석을 받기 위해 본인의 **Gemini API Key**를 연동할 수 있습니다.</p>
                 
-                <div class="form-group">
-                    <label for="gemini-key-input">Gemini API Key</label>
-                    <input type="password" id="gemini-key-input" placeholder="AIzaSy... 형식의 API Key 입력">
+                <!-- 🔊 음성 및 TTS 설정 섹션 -->
+                <div class="settings-section" style="margin-bottom: 1.8rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--md-sys-color-outline-variant);">
+                    <h3 style="margin: 0 0 10px 0; font-size: 1rem; font-weight: 700; color: var(--md-sys-color-on-surface); font-family: 'Outfit', sans-serif;">🔊 음성 및 TTS 설정</h3>
+                    
+                    <div class="form-group" style="margin-bottom: 1.2rem;">
+                        <label style="font-size: 0.85rem; font-weight: 700; color: var(--md-sys-color-on-surface); margin-bottom: 6px; display: block;">영어 발음 재생 여부 및 음성</label>
+                        <div style="display: flex; gap: 8px; align-items: center;">
+                            <button id="tts-toggle-btn" class="tts-toggle-btn" onclick="toggleTTS()" title="TTS On/Off" style="padding: 10px 14px; border-radius: 100px; font-size: 0.8rem; font-weight: 700; min-width: 100px; min-height: 40px; box-sizing: border-box; text-align: center;">🔇 Voice Off</button>
+                            <select id="voice-select" class="voice-select" onchange="changeVoice(this.value)" title="Choose English Voice" style="flex: 1; padding: 8px 12px; border-radius: 8px; min-height: 40px; background: var(--md-sys-color-surface); color: var(--md-sys-color-on-surface); border: 1px solid var(--md-sys-color-outline); font-size: 0.85rem; max-width: none;">
+                                <option value="" style="color: black;">Loading Voices...</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label style="font-size: 0.85rem; font-weight: 700; color: var(--md-sys-color-on-surface); margin-bottom: 6px; display: block;">재생 속도 (Speed)</label>
+                        <div class="audio-controls-embedded" style="display: flex; gap: 8px; width: 100%;">
+                            <button class="speed-btn" onclick="changeSpeed(0.75)" style="flex: 1; padding: 8px 0; border-radius: 8px; font-size: 0.8rem; font-weight: 700; min-height: 36px; cursor: pointer;">0.75×</button>
+                            <button class="speed-btn active" onclick="changeSpeed(1.0)" style="flex: 1; padding: 8px 0; border-radius: 8px; font-size: 0.8rem; font-weight: 700; min-height: 36px; cursor: pointer;">1.0×</button>
+                            <button class="speed-btn" onclick="changeSpeed(1.25)" style="flex: 1; padding: 8px 0; border-radius: 8px; font-size: 0.8rem; font-weight: 700; min-height: 36px; cursor: pointer;">1.25×</button>
+                            <button class="speed-btn" onclick="changeSpeed(1.5)" style="flex: 1; padding: 8px 0; border-radius: 8px; font-size: 0.8rem; font-weight: 700; min-height: 36px; cursor: pointer;">1.5×</button>
+                        </div>
+                    </div>
                 </div>
                 
-                <div class="api-guide-box">
-                    <h4>💡 Gemini API Key 발급 방법</h4>
-                    <ol>
-                        <li><a href="https://aistudio.google.com/" target="_blank" rel="noopener">Google AI Studio</a>에 접속합니다.</li>
-                        <li>로그인 후 **"Get API Key"** 버튼을 클릭하여 무료 키를 생성합니다.</li>
-                        <li>생성된 키를 복사하여 위 입력란에 붙여넣고 저장하세요.</li>
-                    </ol>
-                    <p class="security-note">⚠️ 입력하신 API Key는 절대 서버로 전송되지 않으며, 사용자의 브라우저 로컬 저장소(localStorage)에만 안전하게 보관됩니다.</p>
+                <!-- 🤖 AI 설정 섹션 -->
+                <div class="settings-section">
+                    <h3 style="margin: 0 0 10px 0; font-size: 1rem; font-weight: 700; color: var(--md-sys-color-on-surface); font-family: 'Outfit', sans-serif;">🤖 AI 문법 코치 설정</h3>
+                    <p style="font-size: 0.8rem; color: var(--md-sys-color-on-surface-variant); line-height: 1.4; margin-bottom: 1rem;">더 똑똑하고 상세한 개별 맞춤 문법 분석을 받기 위해 본인의 **Gemini API Key**를 연동할 수 있습니다.</p>
+                    
+                    <div class="form-group">
+                        <label for="gemini-key-input">Gemini API Key</label>
+                        <input type="password" id="gemini-key-input" placeholder="AIzaSy... 형식의 API Key 입력">
+                    </div>
+                    
+                    <div class="api-guide-box">
+                        <h4>💡 Gemini API Key 발급 방법</h4>
+                        <ol>
+                            <li><a href="https://aistudio.google.com/" target="_blank" rel="noopener">Google AI Studio</a>에 접속합니다.</li>
+                            <li>로그인 후 **"Get API Key"** 버튼을 클릭하여 무료 키를 생성합니다.</li>
+                            <li>생성된 키를 복사하여 위 입력란에 붙여넣고 저장하세요.</li>
+                        </ol>
+                        <p class="security-note">⚠️ 입력하신 API Key는 로컬 브라우저 저장소(localStorage)에만 안전하게 보관됩니다.</p>
+                    </div>
                 </div>
             </div>
             <div class="settings-footer">
