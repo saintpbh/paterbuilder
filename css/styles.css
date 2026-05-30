@@ -795,26 +795,27 @@ body {
     display: none !important;
 }
 
-/* iPhone Optimization - Main Game UI Elements */
+/* iPhone Optimization - Main Game UI Elements (Optimized for tight vertical spacing) */
 @media screen and (max-width: 430px) {
     body {
-        padding: 10px;
-        padding-top: calc(15px + env(safe-area-inset-top));
-        padding-bottom: calc(15px + env(safe-area-inset-bottom));
+        padding: 8px;
+        padding-top: calc(8px + env(safe-area-inset-top));
+        padding-bottom: calc(8px + env(safe-area-inset-bottom));
     }
 
     #game-container {
-        padding: 1.5rem 1rem;
+        padding: 1rem 0.75rem;
         border-radius: 16px;
         max-width: 100%;
         min-height: auto;
+        box-sizing: border-box;
     }
 
     /* Progress HUD responsive layout */
     .sentence-progress-header {
         flex-direction: column;
         align-items: stretch;
-        gap: 8px;
+        gap: 6px;
     }
 
     .audio-controls-embedded {
@@ -822,79 +823,84 @@ body {
         flex-wrap: wrap;
         justify-content: space-between;
         width: 100%;
-        gap: 6px;
+        gap: 4px;
     }
 
     .tts-toggle-btn,
     .voice-select {
         flex: 1 1 calc(50% - 4px);
         max-width: 49%;
-        min-height: 30px;
+        min-height: 28px;
         font-size: 0.7rem;
         box-sizing: border-box;
+        padding: 2px 8px;
     }
 
     .audio-controls-embedded .speed-btn {
-        flex: 1 1 calc(25% - 5px);
+        flex: 1 1 calc(25% - 4px);
         text-align: center;
-        padding: 4px 0;
-        min-height: 30px;
+        padding: 2px 0;
+        min-height: 28px;
     }
 
     .progress-hud {
-        padding: 0.75rem;
-        margin-bottom: 1rem;
+        padding: 0.6rem;
+        margin-bottom: 0.8rem;
     }
 
     #day-number {
-        font-size: 0.95rem;
+        font-size: 0.9rem;
     }
 
     #week-badge {
         font-size: 0.75rem;
-        padding: 3px 8px;
+        padding: 2px 6px;
     }
 
     .level-badge {
         font-size: 0.75rem;
-        padding: 3px 8px;
+        padding: 2px 6px;
     }
 
     #sentence-counter {
-        font-size: 0.8rem;
+        font-size: 0.75rem;
     }
 
-    /* Question Area */
+    /* Question Area - Optimized for tight vertical heights */
     .korean-text {
-        font-size: 1.5rem;
-        margin: 1rem 0 1.5rem;
+        font-size: 1.35rem;
+        margin: 0.8rem 0 1.2rem;
+        line-height: 1.25;
     }
 
     .english-question {
-        font-size: 0.85rem;
+        font-size: 0.8rem;
     }
 
-    /* Answer Area */
+    /* Answer Area - Tighten vertical heights */
     .answer-area {
-        min-height: 100px;
-        padding: 15px;
-        margin-bottom: 1.5rem;
-        gap: 8px;
+        min-height: 85px;
+        padding: 12px;
+        margin-bottom: 1.2rem;
+        gap: 6px;
     }
 
-    /* Word Pills - Larger touch targets */
+    /* Word Pills - Compact for single-screen view */
     .word-pill {
         min-width: 70px;
+        border-radius: 8px;
     }
 
     .pill-text {
-        font-size: 1.1rem;
-        padding: 10px 14px;
+        font-size: 1.05rem;
+        padding: 8px 12px;
+        font-weight: 600;
     }
 
     .pill-tag {
-        font-size: 0.7rem;
-        padding: 3px 0;
+        font-size: 0.6rem;
+        padding: 2px 0;
+        border-radius: 0 0 8px 8px;
     }
 
     /* Chunk Pool */
