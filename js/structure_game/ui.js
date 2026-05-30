@@ -568,6 +568,9 @@ const DIALOGUE_TEMPLATES = [
 ];
 
 export function showMiniDialogueBubble(english, korean) {
+    // UI 틀 깨짐 현상 방지를 위해 실생활 회화(Mini-Dialogue Bubble)는 임시 비활성화 처리합니다.
+    return;
+    
     const bubble = document.getElementById('context-bubble');
     if (!bubble) return;
     
