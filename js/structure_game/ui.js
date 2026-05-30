@@ -2,6 +2,9 @@ import { ROLE_MAP, PRINCIPLES } from '../config.js';
 import { isLightColor } from '../utils.js';
 import { startGame } from './game.js';
 import { gameState } from '../state.js';
+import * as notebook from '../incorrect-notebook.js';
+import * as speech from '../speech-evaluator.js';
+import * as coach from '../ai-coach.js';
 
 export function updateScoreHUD(today, total) {
     const todayEl = document.getElementById('score-today');
@@ -645,3 +648,446 @@ export function showMiniDialogueBubble(english, korean) {
         bubble.classList.remove('gold-edition');
     }, is5Form ? 12000 : 8500);
 }
+
+// ==========================================================================
+// NEW FEATURES INTEGRATION: DASHBOARD, SETTINGS, SPEECH & AI COACH ORCHESTRATOR
+// ==========================================================================
+
+let isMicRecording = false;
+
+// --- settings modal ---
+window.openSettings = function() {
+    const modal = document.getElementById('settings-modal');
+    const input = document.getElementById('gemini-key-input');
+    if (modal && input) {
+        input.value = coach.getAPIKey();
+        modal.classList.remove('hidden');
+    }
+};
+
+window.closeSettings = function() {
+    const modal = document.getElementById('settings-modal');
+    if (modal) modal.classList.add('hidden');
+};
+
+window.saveSettings = function() {
+    const input = document.getElementById('gemini-key-input');
+    if (input) {
+        coach.setAPIKey(input.value);
+        alert("API 설정이 안전하게 로컬 저장소에 저장되었습니다! 💾");
+        window.closeSettings();
+        
+        // AI 코치 패널 상태 새로고침
+        const statusEl = document.querySelector('.coach-status');
+        if (statusEl) {
+            statusEl.textContent = coach.hasAPIKey() ? "Active Online (Gemini Pro)" : "Active Demo Mode";
+            statusEl.style.color = coach.hasAPIKey() ? "#00E676" : "#FFB300";
+        }
+    }
+};
+
+// --- dashboard modal ---
+window.openDashboard = function() {
+    const modal = document.getElementById('dashboard-modal');
+    if (modal) {
+        modal.classList.remove('hidden');
+        renderDashboardStats();
+        renderStreakCalendar();
+        renderNotebook();
+    }
+};
+
+window.closeDashboard = function() {
+    const modal = document.getElementById('dashboard-modal');
+    if (modal) modal.classList.add('hidden');
+};
+
+window.switchDashboardTab = function(tabName) {
+    const tabStats = document.getElementById('tab-stats');
+    const tabNotebook = document.getElementById('tab-notebook');
+    const contentStats = document.getElementById('tab-content-stats');
+    const contentNotebook = document.getElementById('tab-content-notebook');
+
+    if (tabName === 'stats') {
+        tabStats?.classList.add('active');
+        tabNotebook?.classList.remove('active');
+        contentStats?.classList.remove('hidden');
+        contentNotebook?.classList.add('hidden');
+        renderStreakCalendar();
+    } else {
+        tabStats?.classList.remove('active');
+        tabNotebook?.classList.add('active');
+        contentStats?.classList.add('hidden');
+        contentNotebook?.classList.remove('hidden');
+        renderNotebook();
+    }
+};
+
+function renderDashboardStats() {
+    const summary = notebook.getOverallSummary();
+    const correctEl = document.getElementById('stats-correct-count');
+    const incorrectEl = document.getElementById('stats-incorrect-count');
+    const accuracyEl = document.getElementById('stats-accuracy');
+    const daysEl = document.getElementById('stats-days');
+
+    if (correctEl) correctEl.textContent = summary.totalCorrect;
+    if (incorrectEl) incorrectEl.textContent = summary.totalIncorrect;
+    if (accuracyEl) accuracyEl.textContent = `${summary.accuracy}%`;
+    if (daysEl) daysEl.textContent = `${summary.daysActive}일`;
+}
+
+function renderStreakCalendar() {
+    const grid = document.getElementById('streak-calendar-grid');
+    if (!grid) return;
+    grid.innerHTML = '';
+
+    const stats = notebook.getStreakData();
+    const today = new Date();
+    
+    // 최근 28일간의 잔디밭 캘린더 생성
+    for (let i = 27; i >= 0; i--) {
+        const d = new Date();
+        d.setDate(today.getDate() - i);
+        const dateStr = d.toISOString().split('T')[0];
+        const dayStat = stats[dateStr];
+        
+        const dayDiv = document.createElement('div');
+        dayDiv.className = 'streak-day';
+        
+        let level = 0;
+        let tooltipText = `${dateStr}: 학습 이력 없음`;
+
+        if (dayStat) {
+            const total = dayStat.total || 0;
+            tooltipText = `${dateStr}: 정답 ${dayStat.correct}회 | 오답 ${dayStat.incorrect}회`;
+            if (total >= 10) level = 4;
+            else if (total >= 6) level = 3;
+            else if (total >= 3) level = 2;
+            else if (total >= 1) level = 1;
+        }
+
+        dayDiv.style.backgroundColor = `var(--grass-${level})`;
+        dayDiv.setAttribute('title', tooltipText);
+        grid.appendChild(dayDiv);
+    }
+}
+
+function renderNotebook() {
+    const listEl = document.getElementById('notebook-list');
+    const emptyEl = document.getElementById('notebook-empty-view');
+    if (!listEl) return;
+
+    listEl.innerHTML = '';
+    const list = notebook.getIncorrectSentences();
+
+    if (list.length === 0) {
+        emptyEl?.classList.remove('hidden');
+        listEl.classList.add('hidden');
+        return;
+    }
+
+    emptyEl?.classList.add('hidden');
+    listEl.classList.remove('hidden');
+
+    list.forEach((item) => {
+        const itemEl = document.createElement('div');
+        itemEl.className = 'notebook-item';
+        
+        const roles = (item.chunks || []).map(c => c.role);
+        const is5Form = roles.includes('Object') && roles.includes('Complement');
+
+        itemEl.innerHTML = `
+            <div class="notebook-content">
+                <div class="notebook-korean">${item.korean}</div>
+                <div class="notebook-english">${item.english}</div>
+                <div class="notebook-tags">
+                    <span class="notebook-tag" style="background:#546E7A;">복습 ${item.reviewCount || 1}회</span>
+                    ${is5Form ? '<span class="notebook-tag" style="background:#FFD54F; color:#263238;">★ 원어민 5형식</span>' : ''}
+                </div>
+            </div>
+            <button class="notebook-action-btn" onclick="reviewSentence('${encodeURIComponent(JSON.stringify(item))}')">연습 🚀</button>
+        `;
+        listEl.appendChild(itemEl);
+    });
+}
+
+// 오답 리스트에서 복습하기 클릭 시 강제 로딩
+window.reviewSentence = function(encodedItem) {
+    try {
+        const item = JSON.parse(decodeURIComponent(encodedItem));
+        window.closeDashboard();
+        
+        // gameState 강제 강하 주입 및 UI 오버라이드
+        if (gameState) {
+            gameState.currentItem = item;
+            gameState.selectedIndices = [];
+            gameState.usedIndices = [];
+            
+            // Practice Mode Level Badge Style 적용
+            const lvlBtn = document.getElementById('level-btn');
+            if (lvlBtn) {
+                lvlBtn.textContent = `📓 Review Practice`;
+                lvlBtn.style.background = 'linear-gradient(135deg, #FF9100 0%, #FF6D00 100%)';
+            }
+
+            // UI 렌더링 리빌드
+            updateQuestionDisplay(item.korean, item.grammarExplanation || "오답 복습 모드");
+            renderPool(item.chunks, [], window.onChunkInput);
+            renderAnswerSlot(item.chunks, [], window.onChunkUndo);
+            hideSpeechPanel();
+        }
+    } catch(e) {
+        console.error("Failed to load review sentence", e);
+    }
+};
+
+// --- AI Coach Sidebar Orchestrator ---
+window.toggleAICoach = function() {
+    const panel = document.getElementById('ai-coach-panel');
+    if (panel) {
+        panel.classList.toggle('active');
+        
+        // 상태 표시등 갱신
+        const statusEl = panel.querySelector('.coach-status');
+        if (statusEl) {
+            statusEl.textContent = coach.hasAPIKey() ? "Active Online" : "Active Demo Mode";
+            statusEl.style.color = coach.hasAPIKey() ? "#00E676" : "#FFB300";
+        }
+    }
+};
+
+window.sendCoachMessage = async function() {
+    const input = document.getElementById('coach-input');
+    const messagesContainer = document.getElementById('coach-messages');
+    if (!input || !messagesContainer || !input.value.trim()) return;
+
+    const userText = input.value.trim();
+    input.value = '';
+
+    // 사용자 말풍선 추가
+    appendCoachBubble(userText, 'user');
+    
+    // AI 로딩 스피너 추가
+    const spinner = showCoachSpinner();
+
+    // Context가 있다면 전달
+    let contextStr = "";
+    if (gameState && gameState.currentItem) {
+        contextStr = {
+            english: gameState.currentItem.english,
+            korean: gameState.currentItem.korean
+        };
+    }
+
+    try {
+        const responseText = await coach.askAICoach(userText, contextStr);
+        spinner.remove();
+        
+        // AI 답변 말풍선 추가 (마크다운 가볍게 파싱하여 주입)
+        appendCoachBubble(parseMarkdownToHtml(responseText), 'ai', true);
+    } catch (e) {
+        spinner.remove();
+        appendCoachBubble(`❌ 오류가 발생했습니다: ${e.message}`, 'system-error');
+    }
+};
+
+window.handleCoachInput = function(event) {
+    if (event.key === 'Enter') {
+        window.sendCoachMessage();
+    }
+};
+
+window.askQuickQuestion = function(text) {
+    const input = document.getElementById('coach-input');
+    if (input) {
+        input.value = text;
+        window.sendCoachMessage();
+    }
+};
+
+window.askSentenceAnalysis = async function() {
+    if (!gameState || !gameState.currentItem) {
+        alert("현재 분석할 활성화된 학습 문장이 없습니다!");
+        return;
+    }
+
+    const messagesContainer = document.getElementById('coach-messages');
+    if (!messagesContainer) return;
+
+    appendCoachBubble(`🔍 현재 학습 문장 분석을 요청합니다. ('${gameState.currentItem.english}')`, 'user');
+    const spinner = showCoachSpinner();
+
+    try {
+        const responseText = await coach.askAICoach(
+            `현재 내가 풀고 있는 문장에 대해 문장 구성 요소 구조(주어, 동사, 목적어, 보어) 분석과 원어민 뉘앙스 사용 팁을 한국어로 설명해 주세요!`, 
+            {
+                english: gameState.currentItem.english,
+                korean: gameState.currentItem.korean
+            }
+        );
+        spinner.remove();
+        appendCoachBubble(parseMarkdownToHtml(responseText), 'ai', true);
+    } catch(e) {
+        spinner.remove();
+        appendCoachBubble(`❌ 오류: ${e.message}`, 'system-error');
+    }
+};
+
+function appendCoachBubble(text, type, isHtml = false) {
+    const container = document.getElementById('coach-messages');
+    if (!container) return;
+
+    const bubble = document.createElement('div');
+    bubble.className = `coach-bubble ${type}`;
+    
+    if (isHtml) {
+        bubble.innerHTML = text;
+    } else {
+        bubble.textContent = text;
+    }
+
+    container.appendChild(bubble);
+    container.scrollTop = container.scrollHeight;
+}
+
+function showCoachSpinner() {
+    const container = document.getElementById('coach-messages');
+    if (!container) return null;
+
+    const spinner = document.createElement('div');
+    spinner.className = 'coach-bubble ai ai-spinner';
+    spinner.innerHTML = `
+        <div class="spinner-dot"></div>
+        <div class="spinner-dot"></div>
+        <div class="spinner-dot"></div>
+    `;
+    container.appendChild(spinner);
+    container.scrollTop = container.scrollHeight;
+    return spinner;
+}
+
+// 문법 마크다운을 간단히 HTML로 변환하는 초경량 유틸 함수
+function parseMarkdownToHtml(md) {
+    return md
+        .replace(/\n\n/g, '<br><br>')
+        .replace(/\n/g, '<br>')
+        .replace(/\*\*(.*?)\*\*/g, '<strong style="color:var(--primary); font-weight:800;">$1</strong>')
+        .replace(/\*(.*?)\*/g, '<em style="color:#00796B;">$1</em>')
+        .replace(/`([^`]+)`/g, '<code style="background:#ECEFF1; padding:2px 6px; border-radius:4px; font-family:monospace; font-weight:700;">$1</code>');
+}
+
+// --- Speech Shadowing Orchestrator ---
+export function showSpeechPanel() {
+    const panel = document.getElementById('speech-panel');
+    if (panel) {
+        panel.classList.remove('hidden');
+        resetSpeechUI();
+    }
+}
+
+export function hideSpeechPanel() {
+    const panel = document.getElementById('speech-panel');
+    if (panel) panel.classList.add('hidden');
+    speech.stopListening();
+    isMicRecording = false;
+    
+    const micBtn = document.getElementById('mic-btn');
+    micBtn?.classList.remove('recording');
+}
+
+function resetSpeechUI() {
+    const micBtn = document.getElementById('mic-btn');
+    const status = document.getElementById('speech-status');
+    const card = document.getElementById('speech-result-card');
+    
+    micBtn?.classList.remove('recording');
+    if (status) {
+        status.textContent = speech.isSpeechSupported() ? "🎤 버튼을 누르고 영어를 크게 따라 말해 보세요!" : "⚠️ 이 브라우저는 음성 인식을 지원하지 않습니다.";
+        status.className = "speech-status";
+    }
+    card?.classList.add('hidden');
+}
+
+window.toggleMic = function() {
+    if (!speech.isSpeechSupported()) {
+        alert("이 브라우저에서는 음성 인식을 사용할 수 없습니다. Chrome 또는 Safari 최신 버전을 권장합니다.");
+        return;
+    }
+
+    const micBtn = document.getElementById('mic-btn');
+    const status = document.getElementById('speech-status');
+    const card = document.getElementById('speech-result-card');
+
+    if (isMicRecording) {
+        // 녹음 중지
+        speech.stopListening();
+        isMicRecording = false;
+        micBtn?.classList.remove('recording');
+        if (status) {
+            status.textContent = "음성을 정밀 분석하는 중입니다...";
+            status.className = "speech-status";
+        }
+    } else {
+        // 녹음 시작
+        isMicRecording = true;
+        micBtn?.classList.add('recording');
+        card?.classList.add('hidden');
+        if (status) {
+            status.textContent = "🎙️ 말하는 중... (Shadowing...)";
+            status.className = "speech-status listening";
+        }
+
+        speech.startListening(
+            // 결과 성공 콜백
+            (spokenText) => {
+                const targetText = gameState?.currentItem?.english || "";
+                const result = speech.evaluatePronunciation(targetText, spokenText);
+                
+                // 결과 UI 업데이트
+                if (status) {
+                    status.textContent = "발음 분석이 완료되었습니다!";
+                    status.className = "speech-status";
+                }
+                
+                const scoreEl = document.getElementById('speech-score');
+                const gradeEl = document.getElementById('speech-grade');
+                const spokenEl = document.getElementById('speech-spoken-text');
+                
+                if (scoreEl) {
+                    scoreEl.textContent = `${result.score}%`;
+                    scoreEl.style.color = result.color;
+                }
+                if (gradeEl) {
+                    gradeEl.textContent = result.grade;
+                    gradeEl.style.background = result.color + "1A"; // 10% opacity hex
+                    gradeEl.style.color = result.color;
+                }
+                if (spokenEl) {
+                    spokenEl.textContent = `"${result.spoken}"`;
+                }
+                
+                card?.classList.remove('hidden');
+
+                // 통계 및 햅틱 효과 연동 (80점 이상일 때 잔디 심기 및 축하음)
+                if (result.score >= 80) {
+                    notebook.recordStreak(true);
+                }
+            },
+            // 에러 콜백
+            (err) => {
+                console.error("Speech Recognition Error:", err);
+                isMicRecording = false;
+                micBtn?.classList.remove('recording');
+                if (status) {
+                    status.textContent = `⚠️ 오류: ${err}. 다시 시도해 주세요.`;
+                    status.className = "speech-status";
+                }
+            },
+            // 완료 콜백
+            () => {
+                isMicRecording = false;
+                micBtn?.classList.remove('recording');
+            }
+        );
+    }
+};

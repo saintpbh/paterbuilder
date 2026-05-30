@@ -65,6 +65,8 @@
                 </div>
                 <!-- Practice Day / Level badge moves to right end -->
                 <div class="day-info-right">
+                    <button class="hud-icon-btn" onclick="openDashboard()" title="학습 통계 & 오답노트">📊</button>
+                    <button class="hud-icon-btn" onclick="openSettings()" title="AI 설정">⚙️</button>
                     <span id="level-btn" class="level-badge level-badge-hud">LEVEL 1-1</span>
                 </div>
             </div>
@@ -97,7 +99,6 @@
             <div class="success-badge">PERFECT! +20</div>
         </div>
 
-
         <!-- Context Bubble -->
         <div class="context-bubble" id="context-bubble">
             <div class="context-icon">💡</div>
@@ -113,7 +114,6 @@
             Loading...
         </div>
 
-
         <!-- Error Feedback -->
         <div class="error-feedback" id="error-feedback">
             <div class="feedback-icon">❌</div>
@@ -125,6 +125,40 @@
         <div class="answer-area" id="answer-slot">
             <!-- Selected chunks appear here -->
             <div style="color: #CFD8DC; font-weight: 600;">Tap chunks to build the sentence</div>
+        </div>
+
+        <!-- Speech Practice Panel (Appears after correct sentence assembly) -->
+        <div id="speech-panel" class="speech-panel hidden">
+            <div class="speech-header">
+                <h3>🎙️ Speech & Pronunciation Shadowing</h3>
+                <p>문장을 직접 소리 내어 원어민처럼 읽어보세요!</p>
+            </div>
+            
+            <div class="speech-action-area">
+                <button id="mic-btn" class="mic-btn" onclick="toggleMic()" title="발음 연습 시작/정지">
+                    <span class="mic-icon">🎤</span>
+                </button>
+                <div class="wave-container">
+                    <div class="wave-bar"></div>
+                    <div class="wave-bar"></div>
+                    <div class="wave-bar"></div>
+                    <div class="wave-bar"></div>
+                    <div class="wave-bar"></div>
+                </div>
+            </div>
+            
+            <div id="speech-status" class="speech-status">마이크 버튼을 눌러 말을 시작하세요</div>
+            
+            <div id="speech-result-card" class="speech-result-card hidden">
+                <div class="result-accuracy-gauge">
+                    <span id="speech-score" class="score-number">95%</span>
+                    <span id="speech-grade" class="score-grade">Excellent!</span>
+                </div>
+                <div class="result-comparison">
+                    <div class="spoken-text-label">내가 말한 발음:</div>
+                    <div id="speech-spoken-text" class="spoken-text">"..."</div>
+                </div>
+            </div>
         </div>
 
         <div class="chunk-pool" id="pool-area">
@@ -139,6 +173,41 @@
 
         <!-- Save & Exit Button (Power Icon) -->
         <button class="save-exit-btn icon-only" onclick="showExitModal()" title="학습 마치기">⏻</button>
+
+        <!-- AI Coach Sidebar Trigger (Stunning floating action button) -->
+        <button id="ai-coach-trigger" class="ai-coach-trigger" onclick="toggleAICoach()" title="AI 문법 코치 열기">🤖</button>
+
+        <!-- AI Coach Sidebar Panel -->
+        <div id="ai-coach-panel" class="ai-coach-panel">
+            <div class="coach-header">
+                <div class="coach-title-area">
+                    <span class="coach-avatar">🤖</span>
+                    <div>
+                        <h4>AI Grammar Coach</h4>
+                        <span class="coach-status">Active Online</span>
+                    </div>
+                </div>
+                <button class="coach-close-btn" onclick="toggleAICoach()">×</button>
+            </div>
+            
+            <div id="coach-messages" class="coach-messages">
+                <div class="coach-bubble ai">
+                    안녕하세요! 🌈 **레인보우 AI 문법 코치**입니다.
+                    현재 학습 중인 5형식 문법 구조나 단어 뉘앙스에 관해 궁금한 점이 있으시다면 언제든 질문해 주세요!
+                </div>
+            </div>
+            
+            <div class="coach-quick-actions">
+                <button class="quick-btn" onclick="askQuickQuestion('5형식 구조와 목적격 보어가 무엇인가요?')">💡 5형식 구조란?</button>
+                <button class="quick-btn" onclick="askQuickQuestion('keep과 leave의 뉘앙스 차이는 무엇인가요?')">❓ keep vs leave 차이</button>
+                <button id="coach-analyze-btn" class="quick-btn highlight" onclick="askSentenceAnalysis()">🔍 현재 문장 분석</button>
+            </div>
+            
+            <div class="coach-input-area">
+                <input type="text" id="coach-input" placeholder="코치에게 영어 문법 물어보기..." onkeypress="handleCoachInput(event)">
+                <button id="coach-send-btn" onclick="sendCoachMessage()">보내기</button>
+            </div>
+        </div>
 
     </div>
 
@@ -171,6 +240,92 @@
             <div class="exit-modal-buttons">
                 <button class="exit-cancel-btn" onclick="closeExitModal()">계속 학습</button>
                 <button class="exit-confirm-btn" onclick="confirmExit()">저장하고 나가기</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Dashboard Modal (Statistics & Incorrect Notebook) -->
+    <div id="dashboard-modal" class="dashboard-modal modal-overlay hidden">
+        <div class="dashboard-content modal-content">
+            <div class="dashboard-header">
+                <h2>📊 학습 리포트 & 오답노트</h2>
+                <button class="modal-close-btn" onclick="closeDashboard()">×</button>
+            </div>
+            
+            <div class="dashboard-tabs">
+                <button id="tab-stats" class="tab-btn active" onclick="switchDashboardTab('stats')">📈 학습 통계</button>
+                <button id="tab-notebook" class="tab-btn" onclick="switchDashboardTab('notebook')">📓 오답 복습</button>
+            </div>
+            
+            <div id="tab-content-stats" class="tab-content">
+                <div class="stats-summary-grid">
+                    <div class="stats-card">
+                        <span class="label">총 정답 횟수</span>
+                        <strong id="stats-correct-count" class="value text-emerald">0</strong>
+                    </div>
+                    <div class="stats-card">
+                        <span class="label">오답 발생</span>
+                        <strong id="stats-incorrect-count" class="value text-red">0</strong>
+                    </div>
+                    <div class="stats-card">
+                        <span class="label">종합 정확도</span>
+                        <strong id="stats-accuracy" class="value text-gold">0%</strong>
+                    </div>
+                    <div class="stats-card">
+                        <span class="label">학습 일수</span>
+                        <strong id="stats-days" class="value text-purple">0일</strong>
+                    </div>
+                </div>
+                
+                <div class="calendar-section">
+                    <h3>🌱 Daily Habit Streak (학습 잔디밭)</h3>
+                    <p class="section-desc">매일매일 문장을 학습하여 푸른 잔디를 채워보세요!</p>
+                    <div id="streak-calendar-grid" class="streak-calendar-grid">
+                        <!-- Calendar Days dynamically injected via JS -->
+                    </div>
+                </div>
+            </div>
+            
+            <div id="tab-content-notebook" class="tab-content hidden">
+                <div id="notebook-empty-view" class="notebook-empty-view">
+                    <span class="empty-icon">🎉</span>
+                    <p>현재 틀린 문장이 없습니다! 아주 훌륭한 실력이군요.</p>
+                </div>
+                <div id="notebook-list" class="notebook-list">
+                    <!-- Incorrect sentences dynamically injected via JS -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- API Settings Modal -->
+    <div id="settings-modal" class="settings-modal modal-overlay hidden">
+        <div class="settings-content modal-content">
+            <div class="settings-header">
+                <h2>⚙️ AI 코치 API 설정</h2>
+                <button class="modal-close-btn" onclick="closeSettings()">×</button>
+            </div>
+            <div class="settings-body">
+                <p>더 똑똑하고 상세한 개별 맞춤 문법 분석을 받기 위해 본인의 **Gemini API Key**를 연동할 수 있습니다.</p>
+                
+                <div class="form-group">
+                    <label for="gemini-key-input">Gemini API Key</label>
+                    <input type="password" id="gemini-key-input" placeholder="AIzaSy... 형식의 API Key 입력">
+                </div>
+                
+                <div class="api-guide-box">
+                    <h4>💡 Gemini API Key 발급 방법</h4>
+                    <ol>
+                        <li><a href="https://aistudio.google.com/" target="_blank" rel="noopener">Google AI Studio</a>에 접속합니다.</li>
+                        <li>로그인 후 **"Get API Key"** 버튼을 클릭하여 무료 키를 생성합니다.</li>
+                        <li>생성된 키를 복사하여 위 입력란에 붙여넣고 저장하세요.</li>
+                    </ol>
+                    <p class="security-note">⚠️ 입력하신 API Key는 절대 서버로 전송되지 않으며, 사용자의 브라우저 로컬 저장소(localStorage)에만 안전하게 보관됩니다.</p>
+                </div>
+            </div>
+            <div class="settings-footer">
+                <button class="exit-cancel-btn" onclick="closeSettings()">취소</button>
+                <button class="exit-confirm-btn" onclick="saveSettings()">설정 저장 💾</button>
             </div>
         </div>
     </div>

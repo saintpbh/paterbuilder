@@ -5,6 +5,8 @@ import { speakText, playSuccessSound, playFailureSound, speak3x, initAudio } fro
 import * as storage from '../storage.js';
 import * as utils from '../utils.js';
 import * as analytics from '../analytics.js';
+import * as notebook from '../incorrect-notebook.js';
+import * as coach from '../ai-coach.js';
 
 let isProcessing = false;
 
@@ -75,6 +77,10 @@ function initApp() {
     }
 
     gameState.speechRate = storage.loadAudioPreference();
+    
+    // 복습 모드에서 카드 입력을 처리할 수 있도록 전역에 훅 매핑
+    window.onChunkInput = handleInput;
+    window.onChunkUndo = undoSelection;
 }
 
 export function startGame() {
@@ -142,6 +148,9 @@ export function loadLevel() {
     // Reset Slots
     ui.renderAnswerSlot(gameState.currentChunks, gameState.selectedIndices, undoSelection);
 
+    // Hide Speech Shadowing Panel on new level load
+    ui.hideSpeechPanel();
+
     // Render Pool
     ui.renderPool(gameState.currentChunks, [], handleInput);
     ui.updateScoreHUD(gameState.todayScore, gameState.totalScore);
@@ -193,8 +202,6 @@ async function checkCompletion() {
         }
     }
 
-    // Strict order check only — word order IS the learning objective
-
     if (isCorrect) {
         isProcessing = true;
         gameState.totalScore += POINTS_PER_WIN;
@@ -206,6 +213,9 @@ async function checkCompletion() {
         ui.updateScoreHUD(gameState.todayScore, gameState.totalScore);
         ui.showFloatingScore(POINTS_PER_WIN);
         utils.createConfetti(window.innerWidth / 2, window.innerHeight / 2);
+
+        // 정답 실적 및 잔디 심기 이력 반영
+        notebook.recordStreak(true);
 
         analytics.trackAttempt(true, gameState.currentItem.section);
         analytics.trackVocabularyExposure(gameState.currentChunks, gameState.currentItem.section);
@@ -219,7 +229,11 @@ async function checkCompletion() {
         // Render SLA Practical Mini-Dialogue Context Bubble immediately
         ui.showMiniDialogueBubble(gameState.currentItem.english, MatchedKoreanTranslation(gameState.currentItem));
 
-        await new Promise(r => setTimeout(r, 2200)); // Comfort delay to read the dialogue before next item
+        // 말하기 연습 패널 활성화
+        ui.showSpeechPanel();
+
+        // 사용자가 말하기 쉐도잉을 경험할 수 있도록 딜레이를 소폭 연장 (3초)
+        await new Promise(r => setTimeout(r, 3500)); 
 
         isProcessing = false;
         proceedToNextItemLogic();
@@ -230,7 +244,38 @@ async function checkCompletion() {
         ui.indicateFailure();
         playFailureSound();
 
+        // 오답 리포트에 틀린 문장 자동 등록
+        notebook.addIncorrectSentence(
+            gameState.currentItem.korean,
+            gameState.currentItem.english,
+            gameState.currentItem.chunks
+        );
+
         analytics.trackAttempt(false, gameState.currentItem.section);
+
+        // AI 코치 패널이 활성화되어 있을 시, 틀린 문장에 대한 오답 매칭 AI 실시간 코칭 출력
+        const aiPanel = document.getElementById('ai-coach-panel');
+        if (aiPanel && aiPanel.classList.contains('active')) {
+            const userAttemptText = gameState.selectedIndices.map(idx => gameState.currentChunks[idx].text).join(' ');
+            const coachMessages = document.getElementById('coach-messages');
+            
+            if (coachMessages) {
+                const bubble = document.createElement('div');
+                bubble.className = 'coach-bubble ai ai-spinner';
+                bubble.innerHTML = `<div class="spinner-dot"></div><div class="spinner-dot"></div><div class="spinner-dot"></div>`;
+                coachMessages.appendChild(bubble);
+                coachMessages.scrollTop = coachMessages.scrollHeight;
+
+                coach.analyzeError(gameState.currentItem.korean, gameState.currentItem.english, userAttemptText)
+                    .then(analysis => {
+                        bubble.className = 'coach-bubble ai';
+                        // 간단 파싱하여 주입
+                        bubble.innerHTML = `💡 **실시간 오답 피드백**<br><br>${analysis.replace(/\n/g, '<br>')}`;
+                        coachMessages.scrollTop = coachMessages.scrollHeight;
+                    })
+                    .catch(() => bubble.remove());
+            }
+        }
 
         if (gameState.mistakeCount >= 3) {
             playFailureSound();
@@ -253,15 +298,19 @@ async function checkCompletion() {
             // Also render Dialogue on mistake threshold pass
             ui.showMiniDialogueBubble(gameState.currentItem.english, MatchedKoreanTranslation(gameState.currentItem));
 
+            // 말하기 연습 패널 노출
+            ui.showSpeechPanel();
+
             setTimeout(() => {
                 isProcessing = false;
                 proceedToNextItemLogic();
-            }, 3500);
+            }, 4500);
 
             return;
         }
     }
 }
+
 
 // Small helper to ensure matched translation displays nicely
 function MatchedKoreanTranslation(item) {
