@@ -984,6 +984,9 @@ function parseMarkdownToHtml(md) {
 
 // --- Speech Shadowing Orchestrator ---
 export function showSpeechPanel() {
+    // 사용자의 임시 비활성화 요청으로 말하기 쉐도잉 연습 패널은 출력하지 않습니다. (추후 재활성화 고려)
+    return;
+    
     const panel = document.getElementById('speech-panel');
     if (panel) {
         panel.classList.remove('hidden');

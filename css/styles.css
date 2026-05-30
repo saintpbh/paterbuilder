@@ -1593,15 +1593,9 @@ body {
     font-variation-settings: 'FILL' 0, 'wght' 500, 'GRAD' 0, 'opsz' 24;
 }
 
-/* --- Speech Shadowing Panel (M3 Surface Card) --- */
+/* --- Speech Shadowing Panel (M3 Surface Card) - 사용자의 요청으로 임시 비활성화 --- */
 .speech-panel {
-    background: var(--md-sys-color-surface-container-high);
-    border: 1px solid var(--md-sys-color-outline-variant);
-    border-radius: 16px;
-    padding: 1.5rem;
-    margin-bottom: 2rem;
-    animation: slideUpFade 0.3s cubic-bezier(0.2, 0, 0, 1);
-    box-shadow: var(--md-elevation-1);
+    display: none !important;
 }
 
 .speech-header h3 {
